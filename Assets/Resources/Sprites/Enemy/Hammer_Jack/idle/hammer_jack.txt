@@ -1,0 +1,6 @@
+male_idle_spine.png
+size:260,506
+filter:Linear,Linear
+pma:true
+idle
+bounds:2,2,256,502

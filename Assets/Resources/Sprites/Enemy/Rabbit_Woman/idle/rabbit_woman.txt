@@ -1,0 +1,6 @@
+female_idle_spine.png
+size:196,457
+filter:Linear,Linear
+pma:true
+idle
+bounds:2,2,192,453
