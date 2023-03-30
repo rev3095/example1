@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e3e6e9f2fb77994aa2ef0d87a020389, type: 3}
+  m_Name: DialogueDB
+  m_EditorClassIdentifier: 
+  Entities:
+  - branch: 1
+    name: ????
+    dialogue: (unknown sounds)
+    isChoose: 0
+  - branch: 1
+    name: player
+    dialogue: "what the\u2026... what's this?"
+    isChoose: 0
+  - branch: 1
+    name: ????
+    dialogue: "you\u2026. you are human"
+    isChoose: 0
+  - branch: 1
+    name: player
+    dialogue: "who\u2026. are you?"
+    isChoose: 0
+  - branch: 1
+    name: ????
+    dialogue: no time to explain
+    isChoose: 0
+  - branch: 1
+    name: player
+    dialogue: let's deal with this first
+    isChoose: 0
+  - branch: 1
+    name: player
+    dialogue: "o\u2026. kay...."
+    isChoose: 0
+  - branch: 1
+    name: svana
+    dialogue: by the way, call me Svana
+    isChoose: 0
+  - branch: 1
+    name: player
+    dialogue: you can call me as {PlayerName}
+    isChoose: 0
+  - branch: 2
+    name: player
+    dialogue: wait..
+    isChoose: 1
+  - branch: 2
+    name: svana
+    dialogue: no idea, just it's dangerous, that's all
+    isChoose: 0
+  - branch: 2
+    name: player
+    dialogue: need to find the way out
+    isChoose: 0
+  - branch: 2
+    name: player
+    dialogue: let's go together
+    isChoose: 0
+  - branch: 2
+    name: svana
+    dialogue: it's not that easy as it sounds
+    isChoose: 0
+  - branch: 2
+    name: svana
+    dialogue: I visited stairs before here, it was locked
+    isChoose: 0
+  - branch: 2
+    name: player
+    dialogue: so the way down is totally blocked
+    isChoose: 0
+  - branch: 2
+    name: player
+    dialogue: how about going out through window?
+    isChoose: 0
+  - branch: 2
+    name: player
+    dialogue: maybe we can find rope from somewhere
+    isChoose: 0
+  - branch: 2
+    name: svana
+    dialogue: nice try, but go check your window Mr
+    isChoose: 0
+  - branch: 3
+    name: player
+    dialogue: "impossible\u2026. it's only 10th floor here"
+    isChoose: 0
+  - branch: 3
+    name: player
+    dialogue: 'it can''t be high this much! what''s happening? '
+    isChoose: 0
+  - branch: 3
+    name: svana
+    dialogue: can't explain anything, but it's happening
+    isChoose: 0
+  - branch: 3
+    name: svana
+    dialogue: annyway it's not safe here, let's move
+    isChoose: 0
+  - branch: 3
+    name: svana
+    dialogue: those creatures are in everywhere I guess
+    isChoose: 0
+  - branch: 3
+    name: player
+    dialogue: alright, let's move
+    isChoose: 0
+  - branch: 3
+    name: player
+    dialogue: we gotta find some clues
+    isChoose: 0

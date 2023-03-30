@@ -1,0 +1,240 @@
+{
+  "texts":[
+  {
+   "ID": 1,
+   "eng": "NoName"
+  },
+  {
+   "ID": 1000,
+   "eng": "{PlayerName}"
+  },
+  {
+   "ID": 1001,
+   "eng": "K"
+  },
+  {
+   "ID": 1002,
+   "eng": "Chloe"
+  },
+  {
+   "ID": 1003,
+   "eng": "Svana"
+  },
+  {
+   "ID": 2000,
+   "eng": "Hammer Jack"
+  },
+  {
+   "ID": 2001,
+   "eng": "Rabbit Woman"
+  },
+  {
+   "ID": 2002,
+   "eng": "Despairer"
+  },
+  {
+   "ID": 10000,
+   "eng": "Start"
+  },
+  {
+   "ID": 10001,
+   "eng": "Option"
+  },
+  {
+   "ID": 10002,
+   "eng": "Credits"
+  },
+  {
+   "ID": 10003,
+   "eng": "Quit"
+  },
+  {
+   "ID": 10010,
+   "eng": "Normal"
+  },
+  {
+   "ID": 10011,
+   "eng": "Hard"
+  },
+  {
+   "ID": 10012,
+   "eng": "Suitable for begginers<br>characters will be restored by rest<br>start with consumables"
+  },
+  {
+   "ID": 10013,
+   "eng": "Suitable for strategist<br>permanent death for chartacters<br>start with nothing"
+  },
+  {
+   "ID": 10014,
+   "eng": "Play"
+  },
+  {
+   "ID": 10015,
+   "eng": "Exit"
+  },
+  {
+   "ID": 10020,
+   "eng": "Empty"
+  },
+  {
+   "ID": 10021,
+   "eng": "Copy"
+  },
+  {
+   "ID": 10022,
+   "eng": "Delete"
+  },
+  {
+   "ID": 10098,
+   "eng": "Yes"
+  },
+  {
+   "ID": 10099,
+   "eng": "No"
+  },
+  {
+   "ID": 11000,
+   "eng": "Fatigue"
+  },
+  {
+   "ID": 11001,
+   "eng": "Hunger"
+  },
+  {
+   "ID": 11002,
+   "eng": "Stress"
+  },
+  {
+   "ID": 11003,
+   "eng": "F"
+  },
+  {
+   "ID": 11004,
+   "eng": "Bag"
+  },
+  {
+   "ID": 11005,
+   "eng": "Team"
+  },
+  {
+   "ID": 11006,
+   "eng": "Menu"
+  },
+  {
+   "ID": 11010,
+   "eng": "Usage"
+  },
+  {
+   "ID": 11011,
+   "eng": "Combat"
+  },
+  {
+   "ID": 11012,
+   "eng": "Use This?"
+  },
+  {
+   "ID": 11020,
+   "eng": "What will you do?"
+  },
+  {
+   "ID": 11021,
+   "eng": "Open the door"
+  },
+  {
+   "ID": 11022,
+   "eng": "Knock the door"
+  },
+  {
+   "ID": 11023,
+   "eng": "Break the door"
+  },
+  {
+   "ID": 11024,
+   "eng": "Eavesdrop"
+  },
+  {
+   "ID": 11025,
+   "eng": "Leave"
+  },
+  {
+   "ID": 11030,
+   "eng": "Use Lockpick?"
+  },
+  {
+   "ID": 11031,
+   "eng": "Possesion"
+  },
+  {
+   "ID": 11040,
+   "eng": "Opened the door."
+  },
+  {
+   "ID": 11041,
+   "eng": "It seems no one inside."
+  },
+  {
+   "ID": 11042,
+   "eng": "Someone is in the room."
+  },
+  {
+   "ID": 12000,
+   "eng": "Turn"
+  },
+  {
+   "ID": 12001,
+   "eng": "HP"
+  },
+  {
+   "ID": 12002,
+   "eng": "DMG"
+  },
+  {
+   "ID": 12003,
+   "eng": "ACC"
+  },
+  {
+   "ID": 12004,
+   "eng": "DGE"
+  },
+  {
+   "ID": 12005,
+   "eng": "CRT"
+  },
+  {
+   "ID": 12006,
+   "eng": "PRO"
+  },
+  {
+   "ID": 12007,
+   "eng": "SPD"
+  },
+  {
+   "ID": 12010,
+   "eng": "BLEED"
+  },
+  {
+   "ID": 12011,
+   "eng": "BLOCK SIGHT"
+  },
+  {
+   "ID": 12012,
+   "eng": "MARK"
+  },
+  {
+   "ID": 12013,
+   "eng": "STUN"
+  },
+  {
+   "ID": 12014,
+   "eng": "DOWN"
+  },
+  {
+   "ID": 12015,
+   "eng": "MOVE"
+  },
+  {
+   "ID": 12016,
+   "eng": "DEATH"
+  }
+ ]
+}
