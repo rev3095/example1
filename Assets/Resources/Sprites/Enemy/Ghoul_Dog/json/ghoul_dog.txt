@@ -1,0 +1,6 @@
+male_idle_spine.png
+size:357,506
+filter:Linear,Linear
+pma:true
+ghoul_dog
+bounds:2,2,353,502

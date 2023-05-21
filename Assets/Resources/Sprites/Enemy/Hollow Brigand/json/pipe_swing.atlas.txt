@@ -1,0 +1,13 @@
+pipe_swing.png
+size:1514,679
+filter:Linear,Linear
+pma:true
+pipe _swing_effect
+bounds:2,2,793,675
+offsets:14,19,1002,702
+pipe_swing
+bounds:1176,63,336,614
+offsets:335,49,1002,702
+pipe_swing_shade
+bounds:797,26,377,651
+offsets:357,0,1002,702

@@ -1,0 +1,10 @@
+endure!.png
+size:537,457
+filter:Linear,Linear
+pma:true
+endure!
+bounds:295,36,240,419
+offsets:377,138,1002,702
+endure!_shade
+bounds:2,2,291,453
+offsets:356,121,1002,702

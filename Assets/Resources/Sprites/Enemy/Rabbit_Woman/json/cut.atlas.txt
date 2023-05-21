@@ -1,0 +1,15 @@
+cut.png
+size:979,394
+filter:Linear,Linear
+pma:true
+cut
+bounds:410,9,340,383
+offsets:331,107,1002,602
+cut_effect
+bounds:752,27,365,225
+offsets:315,148,1002,602
+rotate:90
+cut_shade
+bounds:2,2,390,406
+offsets:300,84,1002,602
+rotate:90

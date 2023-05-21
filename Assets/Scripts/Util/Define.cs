@@ -52,7 +52,16 @@ public class Define
     }
 
 	public const int CHARACTER_LIST_COUNT = (int)CharacterList.Svana;
-	public const int MAX_ROOM_COUNT = 20;
+	public const int MAX_ROOM_COUNT_10F = 18;
+	public enum CheckedRoom
+	{
+		Default,
+		Open,
+		Knock,
+		Break,
+		Eavedrop,
+		Leave,
+	}
 
 	public enum StatType
     {

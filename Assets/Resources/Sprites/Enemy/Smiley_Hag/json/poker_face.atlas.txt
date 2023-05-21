@@ -1,0 +1,16 @@
+poker_face.png
+size:1384,284
+filter:Linear,Linear
+pma:true
+poker_face
+bounds:562,14,268,503
+offsets:367,100,1002,702
+rotate:90
+poker_face_effect
+bounds:1067,17,265,315
+offsets:356,265,1002,702
+rotate:90
+poker_face_shade
+bounds:2,2,280,558
+offsets:360,87,1002,702
+rotate:90

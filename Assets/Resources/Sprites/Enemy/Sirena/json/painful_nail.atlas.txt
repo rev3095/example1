@@ -1,0 +1,13 @@
+painful_nail.png
+size:1179,472
+filter:Linear,Linear
+pma:true
+painful_nail
+bounds:522,2,435,468
+offsets:286,69,1002,602
+painful_nail_effect
+bounds:959,216,218,254
+offsets:278,287,1002,602
+painful_nail_shade
+bounds:2,7,518,463
+offsets:305,67,1002,602

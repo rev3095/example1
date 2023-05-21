@@ -1,0 +1,12 @@
+i'm_watching.png
+size:518,467
+filter:Linear,Linear
+pma:true
+i'm_watching
+bounds:2,2,210,462
+offsets:390,68,1002,602
+rotate:90
+i'm_watching_shade
+bounds:2,214,251,514
+offsets:382,41,1002,602
+rotate:90

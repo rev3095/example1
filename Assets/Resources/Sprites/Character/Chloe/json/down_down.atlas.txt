@@ -1,0 +1,13 @@
+down_down.png
+size:776,443
+filter:Linear,Linear
+pma:true
+down_down
+bounds:561,53,213,388
+offsets:396,106,1002,602
+down_down_effect
+bounds:277,26,282,415
+offsets:518,52,1002,602
+down_down_shade
+bounds:2,2,273,439
+offsets:346,96,1002,602

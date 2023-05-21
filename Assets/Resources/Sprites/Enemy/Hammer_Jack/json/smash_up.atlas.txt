@@ -1,0 +1,15 @@
+smash_up.png
+size:999,625
+filter:Linear,Linear
+pma:true
+smash_up
+bounds:649,8,348,615
+offsets:345,40,1002,702
+smash_up_effect
+bounds:2,2,249,564
+offsets:219,77,1002,702
+rotate:90
+smash_up_shade
+bounds:2,253,370,645
+offsets:358,0,1002,702
+rotate:90

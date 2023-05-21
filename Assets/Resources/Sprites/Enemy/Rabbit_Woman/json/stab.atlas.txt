@@ -1,0 +1,13 @@
+stab.png
+size:851,380
+filter:Linear,Linear
+pma:true
+stab
+bounds:392,12,302,366
+offsets:350,116,1002,602
+stab_effect
+bounds:696,197,153,181
+offsets:333,259,1002,602
+stab_shade
+bounds:2,2,388,376
+offsets:350,113,1002,602

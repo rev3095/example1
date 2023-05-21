@@ -1,0 +1,15 @@
+neck_slice.png
+size:745,536
+filter:Linear,Linear
+pma:true
+neck_slice
+bounds:2,2,231,526
+offsets:378,39,1002,602
+rotate:90
+neck_slice_effect
+bounds:546,140,197,394
+offsets:479,193,1002,602
+neck_slice_shade
+bounds:2,235,299,542
+offsets:310,32,1002,602
+rotate:90

@@ -9,32 +9,8 @@ using TMPro;
 
 public class UI_DifficultyPopup :UI_Popup
 {
-    //public bool IsNormal = false; -> Managers.Game.IsNormal = true;로 설정하기
-    //public bool isHard = false;
-
-
-    //public GameObject txt1 = transform.Find("NormalButtonText_2").gameObject;
-
-    //public TMP_Text NormalButtonText_2;
-
     public TMP_Text txt1;
     public TMP_Text txt2;
-
-
-    /*
-    enum Texts
-    {
-        NewGamePopupText,
-        NormalButtonText_1,
-        NormalButtonText_2,
-        HardButtonText_1,
-        HardButtonText_2,
-        PlayButtonText,
-        ExitButtonText,
-
-    }
-
-    */
     enum Buttons
     {
         NormalButton,
@@ -45,10 +21,6 @@ public class UI_DifficultyPopup :UI_Popup
 
     private void Start()
     {
-        //GameObject txt1 = GameObject.Find("NormalButtonText_2");
-        //txt1.SetActive(false);
-
-        //NormalButtonText_2 = FindObjectOfType<TMP_Text>();
         txt1.enabled = false;
         txt2.enabled = false;
         Init();
@@ -56,20 +28,13 @@ public class UI_DifficultyPopup :UI_Popup
     public override void Init()
     {
         base.Init();
-        //GameObject txt2 = GameObject.Find("HardButtonText_2");
         
-        //BindText(typeof(Texts));
         BindButton(typeof(Buttons));
 
         GetButton((int)Buttons.NormalButton).gameObject.BindEvent(OnClickNormalButton);
         GetButton((int)Buttons.HardButton).gameObject.BindEvent(OnClickHardButton);
         GetButton((int)Buttons.PlayButton).gameObject.BindEvent(OnClickPlayButton);
         GetButton((int)Buttons.ExitButton).gameObject.BindEvent(OnClickExitButton);
-
-        //GetText((int)Texts.NormalButtonText_2).text = Managers.GetText(Define.NormalButtonText_2);
-        //GetText((int)Texts.HardButtonText_2).text = Managers.GetText(Define.HardButtonText_2);
-
-        
 
     }
 
@@ -110,24 +75,22 @@ public class UI_DifficultyPopup :UI_Popup
     {
         if (Managers.Game.SaveData.Difficulty == null)
         {
-            //GetComponent<Button>().interactable = false;
-            //이때는 플레이 버튼이 작동하지 않음.
+            GetButton((int)Buttons.PlayButton).gameObject.GetComponent<Image>().raycastTarget = false;
+
         }
         else
         {
             //GetComponent<Button>().interactable = true;
             Managers.Game.SaveGame();
             Managers.UI.CloseAllPopupUI();
-            Managers.UI.ShowPopupUI<UI_Lobby_10F>();
+            SceneManager.LoadScene("LobbyScene");
+            //if (IsNormal == true) if (isHard ==true);로 return 코드 작성 (밸런스는 Enemy 스탯 1.5배 높여서 스탯 데이터 작성)
         }
-        //if (IsNormal == true) if (isHard ==true);로 return 코드 작성 (밸런스는 Enemy 스탯 1.5배 높여서 스탯 데이터 작성)ㅊ
-
     }
 
     void OnClickExitButton(PointerEventData data)
     {
         Managers.UI.ClosePopupUI(this);
-
     }
 
 

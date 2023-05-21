@@ -1,0 +1,16 @@
+pulling_head.png
+size:1459,356
+filter:Linear,Linear
+pma:true
+pulling_head
+bounds:578,55,299,508
+offsets:353,94,1002,702
+rotate:90
+pulling_head_effect
+bounds:1088,5,349,369
+offsets:183,287,1002,702
+rotate:90
+pulling_head_shade
+bounds:2,2,352,574
+offsets:302,90,1002,702
+rotate:90

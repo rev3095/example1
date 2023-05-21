@@ -18,36 +18,36 @@ public static class Extension
 		UI_Base.BindEvent(go, action, type);
 	}
 
-	/*
-	static System.Random _rand = new System.Random();
 
-	public static void Shuffle<T>(this IList<T> list)
-	{
-		int n = list.Count;
-		while (n > 1)
-		{
-			n--;
-			int k = _rand.Next(n + 1);
-			T value = list[k];
-			list[k] = list[n];
-			list[n] = value;
-		}
-	}
+    static System.Random _rand = new System.Random();
 
-	public static T GetRandom<T>(this IList<T> list)
-	{
-		int index = _rand.Next(list.Count);
-		return list[index];
-	}
+    public static void Shuffle<T>(this IList<T> list)
+    {
+        int n = list.Count;
+        while (n > 1)
+        {
+            n--;
+            int k = _rand.Next(n + 1);
+            T value = list[k];
+            list[k] = list[n];
+            list[n] = value;
+        }
+    }
 
-	public static void ResetVertical(this ScrollRect scrollRect)
-	{
-		scrollRect.verticalNormalizedPosition = 1;
-	}
+    public static T GetRandom<T>(this IList<T> list)
+    {
+        int index = _rand.Next(list.Count);
+        return list[index];
+    }
 
-	public static void ResetHorizontal(this ScrollRect scrollRect)
-	{
-		scrollRect.horizontalNormalizedPosition = 1;
-	}
-	*/
+    public static void ResetVertical(this ScrollRect scrollRect)
+    {
+        scrollRect.verticalNormalizedPosition = 1;
+    }
+
+    public static void ResetHorizontal(this ScrollRect scrollRect)
+    {
+        scrollRect.horizontalNormalizedPosition = 1;
+    }
+
 }

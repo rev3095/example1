@@ -1,0 +1,10 @@
+back_shadow.png
+size:603,402
+filter:Linear,Linear
+pma:true
+back_shadow
+bounds:343,2,258,398
+offsets:369,100,1002,602
+back_shadow_shade
+bounds:2,10,339,390
+offsets:356,106,1002,602

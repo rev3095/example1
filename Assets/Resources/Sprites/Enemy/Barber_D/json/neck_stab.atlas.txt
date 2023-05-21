@@ -1,0 +1,14 @@
+neck_stab.png
+size:909,589
+filter:Linear,Linear
+pma:true
+neck_stab
+bounds:530,37,377,550
+offsets:312,80,1002,702
+neck_stab_effect
+bounds:2,2,256,124
+offsets:298,427,1002,702
+neck_stab_shade
+bounds:2,128,459,526
+offsets:338,89,1002,702
+rotate:90

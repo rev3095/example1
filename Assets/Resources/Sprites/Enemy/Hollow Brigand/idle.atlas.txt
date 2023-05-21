@@ -1,0 +1,6 @@
+idle.png
+size:268,506
+filter:Linear,Linear
+pma:true
+idle
+bounds:2,2,264,502

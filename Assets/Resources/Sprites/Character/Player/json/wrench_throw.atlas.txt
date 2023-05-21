@@ -1,0 +1,14 @@
+wrench_throw.png
+size:1401,491
+filter:Linear,Linear
+pma:true
+wrench_throw
+bounds:2,20,598,469
+offsets:252,112,1002,702
+wrench_throw_effect
+bounds:1280,2,487,119
+offsets:281,394,1002,702
+rotate:90
+wrench_throw_shade
+bounds:602,25,676,464
+offsets:162,119,1002,702

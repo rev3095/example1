@@ -1,0 +1,14 @@
+gazing.png
+size:682,796
+filter:Linear,Linear
+pma:true
+gazing
+bounds:2,2,264,515
+offsets:369,87,1002,702
+gazing_effect
+bounds:268,81,412,436
+offsets:298,131,1002,702
+gazing_shade
+bounds:2,519,275,651
+offsets:380,15,1002,702
+rotate:90

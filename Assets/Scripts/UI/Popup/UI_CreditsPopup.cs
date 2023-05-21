@@ -27,6 +27,8 @@ public class UI_CreditsPopup : UI_Popup
     {
         Init();
     }
+
+    Action CreditsAction;
     public override void Init()
     {
         base.Init();
@@ -35,6 +37,11 @@ public class UI_CreditsPopup : UI_Popup
 
         GetButton((int)Buttons.ConfirmButton).gameObject.BindEvent(OnClickConfirmButton);
     }
+    public void SetInfo(Action action)
+    {
+        CreditsAction = action;
+    }
+
 
     public void OnClickConfirmButton(PointerEventData data)
     {
@@ -42,7 +49,9 @@ public class UI_CreditsPopup : UI_Popup
         //Debug.Log("OnClickConfirmButton");
         //Debug.Log($"Input ID {_inputField.text}");
         Managers.UI.ClosePopupUI(this);
+        CreditsAction?.Invoke();
 
     }
+
 
 }

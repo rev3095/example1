@@ -1,0 +1,14 @@
+dogtooth.png
+size:988,572
+filter:Linear,Linear
+pma:true
+dogtooth
+bounds:465,59,387,511
+offsets:309,97,1002,702
+dogtooth_effect
+bounds:854,370,200,132
+offsets:231,380,1002,702
+rotate:90
+dogtooth_shade
+bounds:2,2,461,568
+offsets:215,108,1002,702

@@ -1,0 +1,14 @@
+wrench_swing.png
+size:1098,513
+filter:Linear,Linear
+pma:true
+wrench_swing
+bounds:814,28,282,483
+offsets:360,110,1002,702
+wrench_swing_effect
+bounds:2,46,465,438
+offsets:213,125,1002,702
+rotate:90
+wrench_swing_shade
+bounds:442,2,370,509
+offsets:278,97,1002,702

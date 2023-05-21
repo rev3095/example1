@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,6 +21,8 @@ public class UI_OptionPopup : UI_Popup
         audioMixer.SetFloat("volume", volume);
     }
     */
+
+    Action OptionAction;
     enum Texts
     {
         OptionText,
@@ -43,13 +46,19 @@ public class UI_OptionPopup : UI_Popup
         GetButton((int)Buttons.ConfirmButton).gameObject.BindEvent(OnClickConfirmButton);
     }
 
+    public void SetInfo(Action action)
+    {
+        OptionAction = action;
+    }
+
+
     public void OnClickConfirmButton(PointerEventData data)
     {
         //Managers.Sound.Play(Sound.Effect, ("Sound_Checkbutton"));
         //Debug.Log("OnClickConfirmButton");
         //Debug.Log($"Input ID {_inputField.text}");
         Managers.UI.ClosePopupUI(this);
-
+        OptionAction?.Invoke();
     }
 
 }

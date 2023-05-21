@@ -37,6 +37,7 @@ public class ResourceManager
 		return Resources.Load<T>(path);
 	}
 
+	//Resources.Load -> Prefabs/path..
 	public GameObject Instantiate(string path, Transform parent = null)
 	{
 		GameObject prefab = Load<GameObject>($"Prefabs/{path}");
@@ -52,6 +53,8 @@ public class ResourceManager
 	public GameObject Instantiate(GameObject prefab, Transform parent = null)
 	{
 		GameObject go = Object.Instantiate(prefab, parent);
+
+		//Instantiate 생성으로 뒤에 붙는 (Clone) 빼기
 		go.name = prefab.name;
 		return go;
 	}

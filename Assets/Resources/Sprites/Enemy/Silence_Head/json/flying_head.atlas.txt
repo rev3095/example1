@@ -1,0 +1,15 @@
+flying_head.png
+size:1381,540
+filter:Linear,Linear
+pma:true
+flying_head
+bounds:608,10,528,507
+offsets:236,96,1002,702
+rotate:90
+flying_head_effect
+bounds:1117,2,536,262
+offsets:194,370,1002,702
+rotate:90
+flying_head_shade
+bounds:2,31,604,507
+offsets:277,98,1002,702

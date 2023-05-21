@@ -1,0 +1,11 @@
+front_shadow.png
+size:700,318
+filter:Linear,Linear
+pma:true
+front_shadow
+bounds:393,2,314,305
+offsets:348,150,1002,602
+rotate:90
+front_shadow_shade
+bounds:2,3,389,313
+offsets:264,142,1002,602

@@ -35,7 +35,7 @@ public class IntroDialogue : MonoBehaviour
         Managers.UI.CloseAllPopupUI();
         Debug.Log("정상적으로 코루틴 실행 및 완료되었음.");
         Debug.Log(Managers.Game.SaveData.IsFirstStart);
-        Managers.UI.ShowPopupUI<UI_Lobby_10F>();
+        //Managers.UI.ShowPopupUI<UI_Lobby_10F>();
     }
     /*
     //코루틴 Start() 하면 되는데 , 현재는 Update()로 처리

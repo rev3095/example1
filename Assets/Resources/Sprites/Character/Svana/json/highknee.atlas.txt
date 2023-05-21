@@ -1,0 +1,15 @@
+highknee.png
+size:1128,348
+filter:Linear,Linear
+pma:true
+highknee
+bounds:518,23,323,459
+offsets:341,68,1002,602
+rotate:90
+highknee_effect
+bounds:979,85,147,261
+offsets:497,238,1002,602
+highknee_shade
+bounds:2,2,344,514
+offsets:346,2,1002,602
+rotate:90

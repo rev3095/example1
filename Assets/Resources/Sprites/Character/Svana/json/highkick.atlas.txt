@@ -1,0 +1,15 @@
+highkick.png
+size:862,527
+filter:Linear,Linear
+pma:true
+highkick
+bounds:369,187,338,491
+offsets:329,55,1002,602
+rotate:90
+highkick_effect
+bounds:369,32,153,427
+offsets:525,44,1002,602
+rotate:90
+highkick_shade
+bounds:2,2,365,523
+offsets:302,12,1002,602

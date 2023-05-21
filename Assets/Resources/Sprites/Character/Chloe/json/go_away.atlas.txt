@@ -1,0 +1,13 @@
+go_away.png
+size:1814,1006
+filter:Linear,Linear
+pma:true
+go_away
+bounds:2,2,1002,602
+rotate:90
+go_away_effect
+bounds:606,2,1002,602
+rotate:90
+go_away_shade
+bounds:1210,2,1002,602
+rotate:90

@@ -1,0 +1,13 @@
+half_slice.png
+size:822,583
+filter:Linear,Linear
+pma:true
+half_slice
+bounds:597,65,223,516
+offsets:390,100,1002,702
+half_slice_effect
+bounds:287,35,308,546
+offsets:276,139,1002,702
+half_slice_shade
+bounds:2,2,283,579
+offsets:380,86,1002,702

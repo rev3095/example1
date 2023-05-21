@@ -1,0 +1,14 @@
+sinister_face.png
+size:950,571
+filter:Linear,Linear
+pma:true
+sinister_face
+bounds:647,67,301,502
+offsets:348,100,1002,702
+sinister_face_effect
+bounds:2,2,555,208
+offsets:213,455,1002,702
+sinister_face_shade
+bounds:2,212,357,643
+offsets:319,0,1002,702
+rotate:90

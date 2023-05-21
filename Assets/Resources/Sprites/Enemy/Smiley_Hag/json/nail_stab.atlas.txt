@@ -1,0 +1,14 @@
+nail_stab.png
+size:1359,467
+filter:Linear,Linear
+pma:true
+nail_stab
+bounds:619,2,530,463
+offsets:237,114,1002,702
+nail_stab_effect
+bounds:1151,49,416,206
+offsets:230,342,1002,702
+rotate:90
+nail_stab_shade
+bounds:2,3,615,462
+offsets:253,120,1002,702

@@ -1,0 +1,13 @@
+uppercut.png
+size:720,602
+filter:Linear,Linear
+pma:true
+uppercut
+bounds:330,45,294,555
+offsets:355,23,1002,602
+uppercut_efect
+bounds:626,168,92,432
+offsets:578,108,1002,602
+uppercut_shade
+bounds:2,2,326,598
+offsets:326,0,1002,602

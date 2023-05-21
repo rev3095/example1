@@ -15,17 +15,6 @@ public class PlayerState
 	public AnimState state = AnimState.None;
 
 }
-[Serializable]
-public enum RoomState
-{
-	Default,
-	Open,
-	Knock,
-	Break,
-	Eavedrop,
-	Leave,
-}
-
 
 
 [Serializable]
@@ -47,10 +36,9 @@ public class GameData
 	public int CurFloor;
 	public int CurRoom;
 
-	//오픈한 방의 상태 -> CurRoom을 0부터 시작하게 만들고, 오픈 상태를 true,false(Defalut)로 받는 
-	public bool[] OpenedRoom = new bool[MAX_ROOM_COUNT];
-	public RoomState[] RoomStates = new RoomState[MAX_ROOM_COUNT];
+	public CheckedRoom[] checkedRoom = new CheckedRoom[MAX_ROOM_COUNT_10F];
 
+	public int nowMP;
 
 	//난이도 선택
 	public bool IsNormal = false;
@@ -102,7 +90,13 @@ public class GameManagerEx
 {
 	public GameData _gameData = new GameData();
 	public GameData SaveData { get { return _gameData; } set { _gameData = value; } }
-	#region 스탯
+
+	public CheckedRoom[] checkedRoom
+    {
+        get { return _gameData.checkedRoom; }
+		set { _gameData.checkedRoom = value; }
+    }
+    #region 스탯
 
 
 	//클래스가 다르니까 프로퍼티 Name과 _gameData.Name이 같아도 상관 없다.
@@ -169,6 +163,12 @@ public class GameManagerEx
     {
 		get { return _gameData.CurRoom; }
 		set { _gameData.CurRoom = value; }
+    }
+
+	public int nowMP
+    {
+		get { return _gameData.nowMP; }
+        set { _gameData.nowMP = value; }
     }
 
 
@@ -385,7 +385,8 @@ public class GameManagerEx
 
 #endregion
 
-#region 시간
+
+    #region 시간
 
 /*
 public float PlayTime
@@ -409,13 +410,31 @@ public class TimeUtils
 
 	#endregion
 
-#region 배틀
 
-	
+	#region 배틀
 
-#endregion
+
+
+	#endregion
+
+
+	#region UI
+
+	IEnumerator FullTransition()
+	{
+		yield return null;
+	}
+
+	IEnumerator CenterTransition()
+	{
+		yield return null;
+
+	}
+
+	#endregion
 
 	public string InputName;
+
 	public void Init()
 	{
 		StartData startdata = new StartData();
@@ -432,14 +451,21 @@ public class TimeUtils
 		MaxStress = startdata.maxStress;
 		CurFloor = startdata.curFloor;
 		CurRoom = startdata.curRoom;
+		//nowMP = startdata.nowMP;
 		IsFirstStart = startdata.isFirstStart;
 
+		nowMP = 0;
 		//HP = startdata.hp; , 근데 이제 이 데이터들은 Managers.Data.Character.hp에서 가져오는데 , Character ID에 따라서 달라짐 -> AntCompany 구조 참조
 
+		for (int i = 0; i < MAX_ROOM_COUNT_10F; i++)
+		{
+			checkedRoom[i] = CheckedRoom.Default;
+		}
 
 		_path = Application.persistentDataPath + "/SaveData";
 		//PlayTime = 0.0f;
 
+		
 	}
 
 

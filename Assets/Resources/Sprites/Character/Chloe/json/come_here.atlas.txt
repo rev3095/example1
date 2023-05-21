@@ -1,0 +1,10 @@
+come_here.png
+size:597,453
+filter:Linear,Linear
+pma:true
+come_here
+bounds:339,22,256,429
+offsets:370,88,1002,602
+come_here_shade
+bounds:2,2,335,449
+offsets:356,66,1002,602

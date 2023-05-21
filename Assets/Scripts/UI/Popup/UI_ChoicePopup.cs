@@ -124,7 +124,7 @@ public class UI_ChoicePopup : UI_Popup
         
         for (int i = 0; i < chooseDB.Entities.Count; i++)
         {
-            UI_ChoiceButton item = Managers.UI.MakeButton<UI_ChoiceButton>(parent.transform,"UI_ChoiceButton");
+            UI_ChoiceButton item = Managers.UI.MakeSubItem<UI_ChoiceButton>(parent.transform,"UI_ChoiceButton");
             //SetInfo 코드 있었음 -> 이거 나중에 SetInfo만 구현해보자, 마지막에 안되면
             GetChoiceText(chooseData[i].dialogue);
             item.Init();

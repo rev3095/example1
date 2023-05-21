@@ -1,0 +1,14 @@
+crush_down.png
+size:1325,448
+filter:Linear,Linear
+pma:true
+crush_down
+bounds:967,39,356,407
+offsets:323,150,1002,702
+crush_down_effect
+bounds:2,2,476,444
+offsets:242,236,1002,702
+crush_down_shade
+bounds:480,24,422,485
+offsets:329,131,1002,702
+rotate:90

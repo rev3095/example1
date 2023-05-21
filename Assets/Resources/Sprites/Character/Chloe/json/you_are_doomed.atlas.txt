@@ -1,0 +1,14 @@
+you_are_doomed.png
+size:530,597
+filter:Linear,Linear
+pma:true
+you_are_doomed
+bounds:289,143,239,452
+offsets:394,75,1002,602
+you_are_doomed_effect
+bounds:289,2,139,146
+offsets:599,370,1002,602
+rotate:90
+you_are_doomed_shade
+bounds:2,66,285,529
+offsets:364,49,1002,602

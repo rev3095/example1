@@ -1,0 +1,15 @@
+push.png
+size:480,980
+filter:Linear,Linear
+pma:true
+push
+bounds:2,416,346,463
+offsets:321,118,1002,702
+rotate:90
+push_effect
+bounds:2,764,332,214
+offsets:329,342,1002,702
+push_shade
+bounds:2,2,412,476
+offsets:244,112,1002,702
+rotate:90

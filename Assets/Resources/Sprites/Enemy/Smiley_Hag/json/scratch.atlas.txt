@@ -1,0 +1,15 @@
+scratch.png
+size:1258,365
+filter:Linear,Linear
+pma:true
+scratch
+bounds:534,70,293,503
+offsets:352,100,1002,702
+rotate:90
+scratch_effect
+bounds:1039,60,217,303
+offsets:302,117,1002,702
+scratch_shade
+bounds:2,2,361,530
+offsets:403,77,1002,702
+rotate:90

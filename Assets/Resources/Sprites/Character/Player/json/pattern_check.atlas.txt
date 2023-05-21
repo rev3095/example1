@@ -1,0 +1,10 @@
+pattern_check.png
+size:429,559
+filter:Linear,Linear
+pma:true
+pattern_check
+bounds:223,6,204,551
+offsets:413,71,1002,702
+pattern_check_shade
+bounds:2,2,219,555
+offsets:402,70,1002,702

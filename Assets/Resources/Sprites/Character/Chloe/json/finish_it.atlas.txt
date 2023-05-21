@@ -1,0 +1,15 @@
+finish_it.png
+size:609,336
+filter:Linear,Linear
+pma:true
+finish_it
+bounds:364,22,243,312
+offsets:378,145,1002,602
+finish_it_effect
+bounds:2,2,68,335
+offsets:589,242,1002,602
+rotate:90
+finish_it_shade
+bounds:2,72,262,360
+offsets:373,147,1002,602
+rotate:90

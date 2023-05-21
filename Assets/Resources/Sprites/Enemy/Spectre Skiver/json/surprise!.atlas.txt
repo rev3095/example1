@@ -1,0 +1,14 @@
+surprise!.png
+size:1030,586
+filter:Linear,Linear
+pma:true
+surprise!
+bounds:758,31,270,553
+offsets:366,55,1002,702
+surprise!_effect
+bounds:2,2,582,396
+offsets:187,290,1002,702
+rotate:90
+surprise!_shade
+bounds:400,28,356,556
+offsets:323,95,1002,702

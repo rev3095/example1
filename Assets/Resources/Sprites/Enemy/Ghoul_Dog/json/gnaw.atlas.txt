@@ -1,0 +1,14 @@
+gnaw.png
+size:888,531
+filter:Linear,Linear
+pma:true
+gnaw
+bounds:570,4,316,525
+offsets:342,80,1002,702
+gnaw_effect
+bounds:2,2,197,132
+offsets:196,424,1002,702
+gnaw_shade
+bounds:2,136,393,566
+offsets:336,42,1002,702
+rotate:90

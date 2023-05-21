@@ -1,0 +1,15 @@
+stab_down.png
+size:540,351
+filter:Linear,Linear
+pma:true
+stab_down
+bounds:285,120,229,253
+offsets:387,173,1002,602
+rotate:90
+stab_down_effect
+bounds:285,2,116,196
+offsets:510,273,1002,602
+rotate:90
+stab_down_shade
+bounds:2,32,281,317
+offsets:369,187,1002,602

@@ -1,0 +1,14 @@
+wailing.png
+size:766,564
+filter:Linear,Linear
+pma:true
+wailing
+bounds:525,34,239,528
+offsets:380,76,1002,702
+wailing_effect
+bounds:292,2,560,231
+offsets:210,434,1002,702
+rotate:90
+wailing_shade
+bounds:2,13,288,549
+offsets:356,81,1002,702

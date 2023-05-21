@@ -1,0 +1,14 @@
+painful_song.png
+size:1653,468
+filter:Linear,Linear
+pma:true
+painful_song
+bounds:1344,2,307,464
+offsets:348,73,1002,602
+painful_song_effect
+bounds:2,16,770,450
+offsets:169,152,1002,602
+painful_song_shade
+bounds:774,138,328,568
+offsets:329,2,1002,602
+rotate:90

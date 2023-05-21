@@ -1,0 +1,14 @@
+your_jaw!.png
+size:889,474
+filter:Linear,Linear
+pma:true
+your_jaw!
+bounds:385,14,291,458
+offsets:357,119,1002,702
+your_jaw!_effect
+bounds:678,143,329,209
+offsets:426,317,1002,702
+rotate:90
+your_jaw!_shade
+bounds:2,2,381,470
+offsets:268,116,1002,702

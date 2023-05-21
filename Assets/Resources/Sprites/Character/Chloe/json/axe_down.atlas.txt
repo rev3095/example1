@@ -1,0 +1,13 @@
+axe_down.png
+size:518,509
+filter:Linear,Linear
+pma:true
+axe_down
+bounds:207,46,192,461
+offsets:400,72,1002,602
+axe_down_effect
+bounds:401,67,115,440
+offsets:537,114,1002,602
+axe_down_shade
+bounds:2,2,203,505
+offsets:411,71,1002,602

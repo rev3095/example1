@@ -1,0 +1,13 @@
+sacrifice.png
+size:957,506
+filter:Linear,Linear
+pma:true
+sacrifice
+bounds:677,46,278,458
+offsets:361,124,1002,702
+sacrifice_shade_1
+bounds:2,2,316,502
+offsets:350,100,1002,702
+sacrifice_shade_2
+bounds:320,43,355,461
+offsets:279,120,1002,702

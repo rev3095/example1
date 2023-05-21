@@ -1,0 +1,14 @@
+eye_slice.png
+size:953,626
+filter:Linear,Linear
+pma:true
+eye_slice
+bounds:658,12,293,612
+offsets:354,42,1002,702
+eye_slice_effect
+bounds:2,2,514,277
+offsets:112,418,1002,702
+eye_slice_shade
+bounds:2,281,343,654
+offsets:353,0,1002,702
+rotate:90

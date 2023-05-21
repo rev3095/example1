@@ -1,0 +1,15 @@
+dodge.png
+size:519,889
+filter:Linear,Linear
+pma:true
+dodge
+bounds:2,419,334,515
+offsets:336,96,1002,702
+rotate:90
+dodge_effect
+bounds:2,755,191,132
+offsets:315,383,1002,702
+dodge_shade
+bounds:2,2,415,511
+offsets:253,94,1002,702
+rotate:90

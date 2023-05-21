@@ -20,7 +20,7 @@ public class UI_MenuPopup : UI_Popup
 
     enum Buttons
     {
-        SaveButton,
+        TutorialButton,
         OptionButton,
         TitleButton,
     }
@@ -31,15 +31,12 @@ public class UI_MenuPopup : UI_Popup
     }
     public override void Init()
     {
-        /*if (base.Init() == false)
-			return false;
-		*/
         base.Init();
 
         BindText(typeof(Texts));
         BindButton(typeof(Buttons));
 
-        GetButton((int)Buttons.SaveButton).gameObject.BindEvent(OnClickSaveButton);
+        GetButton((int)Buttons.TutorialButton).gameObject.BindEvent(OnClickTutorialButton);
         GetButton((int)Buttons.OptionButton).gameObject.BindEvent(OnClickOptionButton);
         GetButton((int)Buttons.TitleButton).gameObject.BindEvent(OnClickTitleButton);
 
@@ -47,6 +44,7 @@ public class UI_MenuPopup : UI_Popup
 
     //Mask 기능을 이용해서 현재 팝업 영역 이외를 클릭했을 때 꺼지도록 마우스 클릭을 받아 사용하려고 했는데,
         //현재 이미지를 못짜를 것 같아서 (배경 투명한 psd 파일로 달라고 요청) , 일단은 esc 입력으로 해당 팝업을 종료 처리
+        //esc 입력하는게 좀 불편해서 ||로 여러 Input 처리를 받는 편의성 작업이 필요할듯 함.
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -56,11 +54,9 @@ public class UI_MenuPopup : UI_Popup
 
     }
 
-    void OnClickSaveButton(PointerEventData data)
+    void OnClickTutorialButton(PointerEventData data)
     {
-        Managers.Game.SaveGame();
-        Debug.Log("OnClicked");
-        //세이브 완료! 확인창 띄우기  -> ConfirmPopup에서 .text 나 TextAsset 혹은 TMPUGUI 가져와서 ㅇㅇ
+        //Managers.UI.ShowPopupUI<UI_TutorialPopup>();
     }
 
     void OnClickOptionButton(PointerEventData data)
@@ -73,7 +69,7 @@ public class UI_MenuPopup : UI_Popup
     void OnClickTitleButton(PointerEventData data)
     {
         Managers.UI.CloseAllPopupUI();
-        Managers.UI.ShowPopupUI<UI_TitlePopup>();
+        SceneManager.LoadScene("TitleScene");
     }
 
 
