@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+  m_Name: center_selection_frame_Atlas
+  m_EditorClassIdentifier: 
+  atlasFile: {fileID: 4900000, guid: 1acdfd680a7a15148a140c90c7e71e45, type: 3}
+  materials:
+  - {fileID: 2100000, guid: d9e0ef2764d421f4aba350172d7bf708, type: 2}
+  - {fileID: 2100000, guid: 5e567e7ecaeaf2a4c86aa24dd719745f, type: 2}
+  - {fileID: 2100000, guid: 73d8c4eb575fafd488409ca888194b2b, type: 2}
+  - {fileID: 2100000, guid: 10d9dc1c446b3c343ab89bfb0ab3d3be, type: 2}
+  - {fileID: 2100000, guid: 63596ad163fb5444f8318169e7087bea, type: 2}
+  - {fileID: 2100000, guid: b4d0f4eecb9250b419c92c9f069033b0, type: 2}
+  - {fileID: 2100000, guid: 72323146f31239d4985d65ed1ca527e9, type: 2}
+  - {fileID: 2100000, guid: 6cf41b2fb68992f4ba4c6178f5a2a31e, type: 2}
+  - {fileID: 2100000, guid: b8225cc8cf020f74aba7b9ad13b39839, type: 2}
+  - {fileID: 2100000, guid: 7d92f406851069042a94e1a3383f3baa, type: 2}
+  - {fileID: 2100000, guid: 64e95a3f04dc3354ca2a74d620eed6be, type: 2}
+  - {fileID: 2100000, guid: df91a93f50792354b908f41826dae57b, type: 2}
+  - {fileID: 2100000, guid: e35d85247862b1641967f96c141f96ac, type: 2}
+  - {fileID: 2100000, guid: e94405fb4da02964ca22c91d6091de50, type: 2}
+  - {fileID: 2100000, guid: b46eb02c4ced3a44ba77ed9f8b70edc1, type: 2}
+  - {fileID: 2100000, guid: 9277bf76e7034e740b7fd9003b69caf3, type: 2}
+  - {fileID: 2100000, guid: 09dd3f45175b9bc4f8067c2518fa1790, type: 2}
+  - {fileID: 2100000, guid: 37abb780b9bce824f841e69ea368061c, type: 2}
+  - {fileID: 2100000, guid: da37dff888094ca4eab6570e3e71aab0, type: 2}
+  - {fileID: 2100000, guid: f88ba8955b8806e4fa9fefda0b95a783, type: 2}
+  - {fileID: 2100000, guid: 1a9d073cf4b8dea4f90239531cd0830f, type: 2}
+  - {fileID: 2100000, guid: 085aa1f169c67c94d8309baf65b69b9a, type: 2}
+  - {fileID: 2100000, guid: dde43af2a5fbad64a84c8d3197082068, type: 2}

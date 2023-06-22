@@ -1,0 +1,112 @@
+{
+  "RoomDatas":[
+  {
+   "ID": 1,
+   "roomID": "Room_1013",
+   "isItem": false,
+   "itemID": 0
+  },
+  {
+   "ID": 2,
+   "roomID": "Room_1012",
+   "isItem": true,
+   "itemID": 22000
+  },
+  {
+   "ID": 3,
+   "roomID": "Room_1011",
+   "isItem": false,
+   "itemID": 0
+  },
+  {
+   "ID": 4,
+   "roomID": "Room_1010",
+   "isItem": false,
+   "itemID": 0
+  },
+  {
+   "ID": 5,
+   "roomID": "Room_1009",
+   "isItem": true,
+   "itemID": 22001
+  },
+  {
+   "ID": 6,
+   "roomID": "Room_1008",
+   "isItem": false,
+   "itemID": 0
+  },
+  {
+   "ID": 7,
+   "roomID": "Room_1007",
+   "isItem": true,
+   "itemID": 23002
+  },
+  {
+   "ID": 8,
+   "roomID": "Room_1006",
+   "isItem": false,
+   "itemID": 0
+  },
+  {
+   "ID": 9,
+   "roomID": "Room_1005",
+   "isItem": true,
+   "itemID": 22020
+  },
+  {
+   "ID": 10,
+   "roomID": "Room_1004",
+   "isItem": false,
+   "itemID": 0
+  },
+  {
+   "ID": 11,
+   "roomID": "Room_1003",
+   "isItem": true,
+   "itemID": 24000
+  },
+  {
+   "ID": 12,
+   "roomID": "Room_1002",
+   "isItem": false,
+   "itemID": 0
+  },
+  {
+   "ID": 13,
+   "roomID": "Room_1001",
+   "isItem": false,
+   "itemID": 0
+  },
+  {
+   "ID": 14,
+   "roomID": "Room_10_1",
+   "isItem": false,
+   "itemID": 0
+  },
+  {
+   "ID": 15,
+   "roomID": "Room_10_2",
+   "isItem": false,
+   "itemID": 0
+  },
+  {
+   "ID": 16,
+   "roomID": "Room_10_3",
+   "isItem": false,
+   "itemID": 0
+  },
+  {
+   "ID": 17,
+   "roomID": "Room_10_4",
+   "isItem": false,
+   "itemID": 0
+  },
+  {
+   "ID": 18,
+   "roomID": "Room_10_5",
+   "isItem": false,
+   "itemID": 0
+  }
+ ]
+}

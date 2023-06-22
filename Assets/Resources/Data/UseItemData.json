@@ -1,0 +1,175 @@
+{
+  "UseItemDatas" :[
+  {
+   "ID": 1,
+   "nameID": 20000,
+   "difFatigue": 0,
+   "difHunger": -5,
+   "difStress": 0,
+   "acqPercent": 0.067,
+   "iconPath": "Sprites\/Items\/Use\/cup_noodle"
+  },
+  {
+   "ID": 2,
+   "nameID": 20001,
+   "difFatigue": 0,
+   "difHunger": -10,
+   "difStress": 0,
+   "acqPercent": 0.04,
+   "iconPath": "Sprites\/Items\/Use\/bread"
+  },
+  {
+   "ID": 3,
+   "nameID": 20002,
+   "difFatigue": 0,
+   "difHunger": -20,
+   "difStress": 0,
+   "acqPercent": 0.01,
+   "iconPath": "Sprites\/Items\/Use\/meal_kit"
+  },
+  {
+   "ID": 4,
+   "nameID": 20003,
+   "difFatigue": 5,
+   "difHunger": -10,
+   "difStress": 0,
+   "acqPercent": 0.067,
+   "iconPath": "Sprites\/Items\/Use\/rotten_bread"
+  },
+  {
+   "ID": 5,
+   "nameID": 20004,
+   "difFatigue": 5,
+   "difHunger": -20,
+   "difStress": 5,
+   "acqPercent": 0.04,
+   "iconPath": "Sprites\/Items\/Use\/rotten_meal_kit"
+  },
+  {
+   "ID": 6,
+   "nameID": 20005,
+   "difFatigue": -5,
+   "difHunger": -5,
+   "difStress": 0,
+   "acqPercent": 0.04,
+   "iconPath": "Sprites\/Items\/Use\/latte"
+  },
+  {
+   "ID": 7,
+   "nameID": 20006,
+   "difFatigue": -5,
+   "difHunger": -5,
+   "difStress": 5,
+   "acqPercent": 0.067,
+   "iconPath": "Sprites\/Items\/Use\/rotten_latte"
+  },
+  {
+   "ID": 8,
+   "nameID": 20007,
+   "difFatigue": -10,
+   "difHunger": 0,
+   "difStress": 5,
+   "acqPercent": 0.067,
+   "iconPath": "Sprites\/Items\/Use\/energy_drink"
+  },
+  {
+   "ID": 9,
+   "nameID": 20008,
+   "difFatigue": -10,
+   "difHunger": 5,
+   "difStress": 0,
+   "acqPercent": 0.067,
+   "iconPath": "Sprites\/Items\/Use\/water"
+  },
+  {
+   "ID": 10,
+   "nameID": 20009,
+   "difFatigue": -5,
+   "difHunger": 0,
+   "difStress": 0,
+   "acqPercent": 0.067,
+   "iconPath": "Sprites\/Items\/Use\/coffee"
+  },
+  {
+   "ID": 11,
+   "nameID": 20010,
+   "difFatigue": -10,
+   "difHunger": 0,
+   "difStress": 0,
+   "acqPercent": 0.04,
+   "iconPath": "Sprites\/Items\/Use\/espresso"
+  },
+  {
+   "ID": 12,
+   "nameID": 20011,
+   "difFatigue": -10,
+   "difHunger": 0,
+   "difStress": 5,
+   "acqPercent": 0.067,
+   "iconPath": "Sprites\/Items\/Use\/rotten_coffee"
+  },
+  {
+   "ID": 13,
+   "nameID": 20012,
+   "difFatigue": -20,
+   "difHunger": 5,
+   "difStress": 5,
+   "acqPercent": 0.04,
+   "iconPath": "Sprites\/Items\/Use\/stimulant"
+  },
+  {
+   "ID": 14,
+   "nameID": 20013,
+   "difFatigue": 0,
+   "difHunger": 0,
+   "difStress": -5,
+   "acqPercent": 0.067,
+   "iconPath": "Sprites\/Items\/Use\/lollipop"
+  },
+  {
+   "ID": 15,
+   "nameID": 20014,
+   "difFatigue": 0,
+   "difHunger": 0,
+   "difStress": -10,
+   "acqPercent": 0.04,
+   "iconPath": "Sprites\/Items\/Use\/snack"
+  },
+  {
+   "ID": 16,
+   "nameID": 20015,
+   "difFatigue": 5,
+   "difHunger": 0,
+   "difStress": -10,
+   "acqPercent": 0.067,
+   "iconPath": "Sprites\/Items\/Use\/beer"
+  },
+  {
+   "ID": 17,
+   "nameID": 20016,
+   "difFatigue": 5,
+   "difHunger": 0,
+   "difStress": -10,
+   "acqPercent": 0.067,
+   "iconPath": "Sprites\/Items\/Use\/cigarette"
+  },
+  {
+   "ID": 18,
+   "nameID": 20017,
+   "difFatigue": 0,
+   "difHunger": 10,
+   "difStress": -20,
+   "acqPercent": 0.04,
+   "iconPath": "Sprites\/Items\/Use\/whisky"
+  },
+  {
+   "ID": 19,
+   "nameID": 20018,
+   "difFatigue": 5,
+   "difHunger": 5,
+   "difStress": -20,
+   "acqPercent": 0.04,
+   "iconPath": "Sprites\/Items\/Use\/pill"
+  }
+ ]
+}

@@ -11,6 +11,8 @@ public class UI_DifficultyPopup :UI_Popup
 {
     public TMP_Text txt1;
     public TMP_Text txt2;
+
+    public UI_EventHandler handler;
     enum Buttons
     {
         NormalButton,
@@ -36,6 +38,8 @@ public class UI_DifficultyPopup :UI_Popup
         GetButton((int)Buttons.PlayButton).gameObject.BindEvent(OnClickPlayButton);
         GetButton((int)Buttons.ExitButton).gameObject.BindEvent(OnClickExitButton);
 
+        GetButton((int)Buttons.PlayButton).gameObject.GetComponent<UI_EventHandler>().enabled = false;
+
     }
 
     void OnClickNormalButton(PointerEventData data)
@@ -52,7 +56,9 @@ public class UI_DifficultyPopup :UI_Popup
         }
         Managers.Game.SaveData.Difficulty = "Normal";
         Managers.Game.IsNormal = true;
-        
+        GetButton((int)Buttons.PlayButton).gameObject.GetComponent<UI_EventHandler>().enabled = true;
+
+
     }
 
     void OnClickHardButton(PointerEventData data)
@@ -68,6 +74,8 @@ public class UI_DifficultyPopup :UI_Popup
         }
         Managers.Game.IsNormal = false;
         Managers.Game.SaveData.Difficulty = "Hard";
+        GetButton((int)Buttons.PlayButton).gameObject.GetComponent<UI_EventHandler>().enabled = true;
+
 
     }
 
@@ -75,10 +83,9 @@ public class UI_DifficultyPopup :UI_Popup
     {
         if (Managers.Game.SaveData.Difficulty == null)
         {
-            GetButton((int)Buttons.PlayButton).gameObject.GetComponent<Image>().raycastTarget = false;
-
+            return;
         }
-        else
+        else if(Managers.Game.SaveData.Difficulty != null)
         {
             //GetComponent<Button>().interactable = true;
             Managers.Game.SaveGame();
@@ -90,6 +97,7 @@ public class UI_DifficultyPopup :UI_Popup
 
     void OnClickExitButton(PointerEventData data)
     {
+        Managers.Game.SaveData.Difficulty = null;
         Managers.UI.ClosePopupUI(this);
     }
 

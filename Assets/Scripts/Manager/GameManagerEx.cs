@@ -16,6 +16,13 @@ public class PlayerState
 
 }
 
+[Serializable]
+public class ItemState
+{
+	public string ItemType;
+	public int ItemTypeIdx;
+}
+
 
 [Serializable]
 public class GameData
@@ -39,6 +46,47 @@ public class GameData
 	public CheckedRoom[] checkedRoom = new CheckedRoom[MAX_ROOM_COUNT_10F];
 
 	public int nowMP;
+
+	//크기 제한 X , 그러나 초기화 부분 존재 & 보여지는 부분은 MAX_INVEN_COUNT =15 만큼 MakeSubItem
+	public List<UseItemData> UseItemList = new List<UseItemData>();
+	public List<ComItemData> ComItemList = new List<ComItemData>();
+	public List<VisItemData> VisItemList = new List<VisItemData>();
+	public List<AccItemData> AccItemList = new List<AccItemData>();
+
+	// 15칸인데 => 30개로 늘리자 !
+	// define 15 -> 30
+	// 아이템 5개
+	// 15개 => Array List remove 15개 => 15칸인데
+	// for (int i < AccItemList .Length; i++)
+	// 
+
+	// const int SLOT_COUNT =15;
+	// for (int i < SLOT
+
+	//list[0] [1] [2] 
+
+	// 0을 지운다!
+
+	//list[1->0] [2->1]
+
+	// 정렬이된다
+
+
+	// Array 
+	// [0][1][2]
+
+	// 0을 지운다
+
+	// [0] = -1
+
+	// [0][1][2]
+
+
+
+	//List로 다시 바꾸기? => 사용함에 있어서 편리함. 
+	//2가지 
+
+	public int UpgradePosession;
 
 	//난이도 선택
 	public bool IsNormal = false;
@@ -172,6 +220,36 @@ public class GameManagerEx
     }
 
 
+	public List<UseItemData> UseItemList
+    {
+        get { return _gameData.UseItemList; }
+		set { _gameData.UseItemList = value; }
+    }
+
+
+	public List<ComItemData> ComItemList
+    {
+		get { return _gameData.ComItemList; }
+		set { _gameData.ComItemList = value; }
+    }
+
+	public List<VisItemData> VisItemList
+	{
+		get { return _gameData.VisItemList; }
+		set { _gameData.VisItemList = value; }
+    }
+	
+	public List<AccItemData> AccItemList
+    {
+		get { return _gameData.AccItemList; }
+		set { _gameData.AccItemList = value; }
+    }
+
+	public int UpgradePossesion
+    {
+		get { return _gameData.UpgradePosession; }
+        set { _gameData.UpgradePosession = value; }
+    }
     public bool IsNormal
 	{
 		get { return _gameData.IsNormal; }
@@ -435,6 +513,7 @@ public class TimeUtils
 
 	public string InputName;
 
+	//어차피 여기서 Item 배열을 new 해줄 필요가 없음. 게임 데이터를 시작 시 새로 가지게 되기 때문이다..  맞나? 초기화 안되면, 새로 new 써서 작성하기.
 	public void Init()
 	{
 		StartData startdata = new StartData();
@@ -455,6 +534,16 @@ public class TimeUtils
 		IsFirstStart = startdata.isFirstStart;
 
 		nowMP = 0;
+
+		UpgradePossesion = 0;
+
+		UseItemList = new List<UseItemData>();
+		ComItemList = new List<ComItemData>();
+		VisItemList = new List<VisItemData>();
+		AccItemList = new List<AccItemData>();
+
+		//_UseItemList.Clear();
+		//_ComItemList.Clear();
 		//HP = startdata.hp; , 근데 이제 이 데이터들은 Managers.Data.Character.hp에서 가져오는데 , Character ID에 따라서 달라짐 -> AntCompany 구조 참조
 
 		for (int i = 0; i < MAX_ROOM_COUNT_10F; i++)
@@ -462,13 +551,93 @@ public class TimeUtils
 			checkedRoom[i] = CheckedRoom.Default;
 		}
 
-		_path = Application.persistentDataPath + "/SaveData";
-		//PlayTime = 0.0f;
 
+		_path = Application.persistentDataPath + "/SaveData";
+		//PlayTime = 0.0;
 		
 	}
 
+	//Temp List -> 요소는  Array가 동적으로 삭제, 추가되지만 append가 불가능하여, 그냥 리스트로 한번 cast시킨뒤 다시 array를 반환하는 아이템 추가 함수 제작
+	private List<UseItemData> _UseItemList = new List<UseItemData>();
+	private List<ComItemData> _ComItemList = new List<ComItemData>();
 
+
+	//필연적으로 하나밖에 제작이 안되는거 같음. 두 개 이상 생성될때는 두 번 호출시키기.
+	//
+	public void AddItem(string type, int idx)
+    {
+		switch (type)
+        {
+			case "Use":
+				//CheckItemIDX("Use");
+				Managers.Game.UseItemList.Add(Managers.Data.UseItemDict[idx]);
+				break;
+
+			case "Com":
+				//CheckItemIDX("Com");
+				Managers.Game.ComItemList.Add(Managers.Data.ComItemDict[idx]);
+				break;
+
+			case "Vis":
+				Managers.Game.VisItemList.Add(Managers.Data.VisItemDict[idx]);
+				break;
+
+			case "Acc":
+				Managers.Game.AccItemList.Add(Managers.Data.AccItemDict[idx]);
+				break;
+
+			default:
+				break;
+
+		}
+
+    }
+	public int CheckItemIDX(string type)
+	{
+		int Idx = 0;
+
+		switch (type)
+		{
+			case "Use":
+				for (int i = 0; i < 15; i++)
+				{
+					if (Managers.Game.UseItemList[i] != null)
+					{
+						Debug.Log("i++");
+					}
+					else
+					{
+						Idx = i;
+						break;
+
+					}
+
+				}
+				break;
+
+			case "Com":
+				for (int i = 0; i < 15; i++)
+				{
+					if (Managers.Game.ComItemList[i] != null)
+					{
+						Debug.Log("i++");
+					}
+					else
+					{
+						Idx = i;
+						break;
+
+					}
+
+				}
+				break;
+
+		}
+
+
+		return Idx;
+
+	}
 	#region Save & Load	
 	public string _path;
 	public int nowSlot;

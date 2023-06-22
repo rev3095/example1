@@ -23,6 +23,8 @@ public class UI_MenuPopup : UI_Popup
         TutorialButton,
         OptionButton,
         TitleButton,
+        CloseButton1,
+        CloseButton2,
     }
 
     private void Start()
@@ -39,12 +41,14 @@ public class UI_MenuPopup : UI_Popup
         GetButton((int)Buttons.TutorialButton).gameObject.BindEvent(OnClickTutorialButton);
         GetButton((int)Buttons.OptionButton).gameObject.BindEvent(OnClickOptionButton);
         GetButton((int)Buttons.TitleButton).gameObject.BindEvent(OnClickTitleButton);
+        GetButton((int)Buttons.CloseButton1).gameObject.BindEvent((PointerEventData data) => Managers.UI.ClosePopupUI(this));
+        GetButton((int)Buttons.CloseButton2).gameObject.BindEvent((PointerEventData data) => Managers.UI.ClosePopupUI(this));
 
     }
 
     //Mask 기능을 이용해서 현재 팝업 영역 이외를 클릭했을 때 꺼지도록 마우스 클릭을 받아 사용하려고 했는데,
-        //현재 이미지를 못짜를 것 같아서 (배경 투명한 psd 파일로 달라고 요청) , 일단은 esc 입력으로 해당 팝업을 종료 처리
-        //esc 입력하는게 좀 불편해서 ||로 여러 Input 처리를 받는 편의성 작업이 필요할듯 함.
+    //현재 이미지를 못짜를 것 같아서 (배경 투명한 psd 파일로 달라고 요청) , 일단은 esc 입력으로 해당 팝업을 종료 처리
+    //esc 입력하는게 좀 불편해서 ||로 여러 Input 처리를 받는 편의성 작업이 필요할듯 함.
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -71,8 +75,6 @@ public class UI_MenuPopup : UI_Popup
         Managers.UI.CloseAllPopupUI();
         SceneManager.LoadScene("TitleScene");
     }
-
-
 
 
 }

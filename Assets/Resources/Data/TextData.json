@@ -1,5 +1,5 @@
 {
-  "texts":[
+  "textDatas":[
   {
    "ID": 1,
    "eng": "NoName"
@@ -26,11 +26,43 @@
   },
   {
    "ID": 2001,
-   "eng": "Rabbit Woman"
+   "eng": "Screen Man"
   },
   {
    "ID": 2002,
+   "eng": "Hollow Brigand"
+  },
+  {
+   "ID": 2003,
+   "eng": "Rabbit Woman"
+  },
+  {
+   "ID": 2004,
+   "eng": "Spectre Skiver"
+  },
+  {
+   "ID": 2005,
+   "eng": "Barber D"
+  },
+  {
+   "ID": 2006,
    "eng": "Despairer"
+  },
+  {
+   "ID": 2007,
+   "eng": "Silence Head"
+  },
+  {
+   "ID": 2008,
+   "eng": "Sirena"
+  },
+  {
+   "ID": 2009,
+   "eng": "Ghoul Dog"
+  },
+  {
+   "ID": 2010,
+   "eng": "Smiley Hag"
   },
   {
    "ID": 10000,
@@ -235,6 +267,526 @@
   {
    "ID": 12016,
    "eng": "DEATH"
+  },
+  {
+   "ID": 20000,
+   "eng": "Cup noodle"
+  },
+  {
+   "ID": 20001,
+   "eng": "bread"
+  },
+  {
+   "ID": 20002,
+   "eng": "meal-kit"
+  },
+  {
+   "ID": 20003,
+   "eng": "rotten bread"
+  },
+  {
+   "ID": 20004,
+   "eng": "rotten meal-kit"
+  },
+  {
+   "ID": 20005,
+   "eng": "latte"
+  },
+  {
+   "ID": 20006,
+   "eng": "rotten latte"
+  },
+  {
+   "ID": 20007,
+   "eng": "energy drink"
+  },
+  {
+   "ID": 20008,
+   "eng": "water"
+  },
+  {
+   "ID": 20009,
+   "eng": "coffee"
+  },
+  {
+   "ID": 20010,
+   "eng": "espresso"
+  },
+  {
+   "ID": 20011,
+   "eng": "rotten coffee"
+  },
+  {
+   "ID": 20012,
+   "eng": "stimulant"
+  },
+  {
+   "ID": 20013,
+   "eng": "lollipop"
+  },
+  {
+   "ID": 20014,
+   "eng": "snack"
+  },
+  {
+   "ID": 20015,
+   "eng": "beer"
+  },
+  {
+   "ID": 20016,
+   "eng": "cigarette"
+  },
+  {
+   "ID": 20017,
+   "eng": "whisky"
+  },
+  {
+   "ID": 20018,
+   "eng": "pill"
+  },
+  {
+   "ID": 21000,
+   "eng": "band-aid"
+  },
+  {
+   "ID": 21001,
+   "eng": "bandage"
+  },
+  {
+   "ID": 21002,
+   "eng": "first-aid-kit"
+  },
+  {
+   "ID": 21003,
+   "eng": "detoxicant"
+  },
+  {
+   "ID": 21004,
+   "eng": "sedative"
+  },
+  {
+   "ID": 21005,
+   "eng": "lockpick"
+  },
+  {
+   "ID": 22000,
+   "eng": "Old man's diary"
+  },
+  {
+   "ID": 22001,
+   "eng": "F.Galton's Note"
+  },
+  {
+   "ID": 22002,
+   "eng": "'R.Weikart's Note"
+  },
+  {
+   "ID": 22003,
+   "eng": "N.Tesla's Note"
+  },
+  {
+   "ID": 22004,
+   "eng": "B.Hubbard's Note"
+  },
+  {
+   "ID": 22005,
+   "eng": "O.Holmes' Note"
+  },
+  {
+   "ID": 22006,
+   "eng": "J.Cousteau's Note"
+  },
+  {
+   "ID": 22007,
+   "eng": "M.Grant's Note-2"
+  },
+  {
+   "ID": 22008,
+   "eng": "L.Darwin's Note"
+  },
+  {
+   "ID": 22009,
+   "eng": "W.Churchill's Note"
+  },
+  {
+   "ID": 22010,
+   "eng": "M.Grant's Note"
+  },
+  {
+   "ID": 22011,
+   "eng": "C.Darwin's Note"
+  },
+  {
+   "ID": 22012,
+   "eng": "M.Sanger's Note"
+  },
+  {
+   "ID": 22013,
+   "eng": "F.Osborn's Note"
+  },
+  {
+   "ID": 22014,
+   "eng": "T.Dobzhansky's Note"
+  },
+  {
+   "ID": 22015,
+   "eng": "T.Turner's Note"
+  },
+  {
+   "ID": 22016,
+   "eng": "B.Russell's Note"
+  },
+  {
+   "ID": 22020,
+   "eng": "Survivor's chipset-1"
+  },
+  {
+   "ID": 22021,
+   "eng": "Survivor's chipset-2"
+  },
+  {
+   "ID": 22022,
+   "eng": "Survivor's chipset-3"
+  },
+  {
+   "ID": 22023,
+   "eng": "Survivor's chipset-4"
+  },
+  {
+   "ID": 22024,
+   "eng": "Survivor's chipset-5"
+  },
+  {
+   "ID": 22025,
+   "eng": "Survivor's chipset-6"
+  },
+  {
+   "ID": 22026,
+   "eng": "Survivor's chipset-7"
+  },
+  {
+   "ID": 22027,
+   "eng": "Damaged chipset-1"
+  },
+  {
+   "ID": 22028,
+   "eng": "Damaged chipset-2"
+  },
+  {
+   "ID": 22029,
+   "eng": "Damaged chipset-3"
+  },
+  {
+   "ID": 22030,
+   "eng": "Damaged chipset-4"
+  },
+  {
+   "ID": 22031,
+   "eng": "Damaged chipset-5"
+  },
+  {
+   "ID": 22032,
+   "eng": "Damaged chipset-6"
+  },
+  {
+   "ID": 22033,
+   "eng": "Damaged chipset-7"
+  },
+  {
+   "ID": 22034,
+   "eng": "Damaged chipset-8"
+  },
+  {
+   "ID": 22035,
+   "eng": "Damaged chipset-9"
+  },
+  {
+   "ID": 23000,
+   "eng": "Bracelet"
+  },
+  {
+   "ID": 23001,
+   "eng": "Diamond Ring"
+  },
+  {
+   "ID": 23002,
+   "eng": "XTECH Brochure"
+  },
+  {
+   "ID": 23003,
+   "eng": "XTECH Brochure-2"
+  },
+  {
+   "ID": 23004,
+   "eng": "VR Gear"
+  },
+  {
+   "ID": 23005,
+   "eng": "Xperience Brochure"
+  },
+  {
+   "ID": 23006,
+   "eng": "MMA Gloves"
+  },
+  {
+   "ID": 23007,
+   "eng": "Handcuffs"
+  },
+  {
+   "ID": 23008,
+   "eng": "Nine Pilgrims Brochure"
+  },
+  {
+   "ID": 23009,
+   "eng": "Cross"
+  },
+  {
+   "ID": 23010,
+   "eng": "Nine Pilgrims Ring"
+  },
+  {
+   "ID": 23011,
+   "eng": "Nine Pilgrims Bible"
+  },
+  {
+   "ID": 23020,
+   "eng": "A expensive looks bracelet"
+  },
+  {
+   "ID": 23021,
+   "eng": "A ring with a big diamond"
+  },
+  {
+   "ID": 23022,
+   "eng": "Brochure of XTECH old version"
+  },
+  {
+   "ID": 23023,
+   "eng": "Brochure of XTECH new version"
+  },
+  {
+   "ID": 23024,
+   "eng": "VR gear for entertainment"
+  },
+  {
+   "ID": 23025,
+   "eng": "Brochure of Xperience"
+  },
+  {
+   "ID": 23026,
+   "eng": "Used MMA gloves"
+  },
+  {
+   "ID": 23027,
+   "eng": "Used handcuffs with scratches"
+  },
+  {
+   "ID": 23028,
+   "eng": "Brochure of Nine Pilgrims"
+  },
+  {
+   "ID": 23029,
+   "eng": "A cross made by wood"
+  },
+  {
+   "ID": 23030,
+   "eng": "Ring of Nine Pilgrims"
+  },
+  {
+   "ID": 23031,
+   "eng": "Bible of Nine Pilgrims"
+  },
+  {
+   "ID": 24000,
+   "eng": "Upgrade Kit"
+  },
+  {
+   "ID": 30000,
+   "eng": "Enemy is here!"
+  },
+  {
+   "ID": 30001,
+   "eng": "Had to clear scrapped metal."
+  },
+  {
+   "ID": 30002,
+   "eng": "Had to remove scattered stuffs."
+  },
+  {
+   "ID": 30003,
+   "eng": "Seems there was an enemy. Being vigilant, but nothing happened."
+  },
+  {
+   "ID": 30004,
+   "eng": "Couldn’t see ahead, so walked slowly with cautious."
+  },
+  {
+   "ID": 30005,
+   "eng": "Unknown noise, but faded. "
+  },
+  {
+   "ID": 30006,
+   "eng": "Unknown noise was keep going."
+  },
+  {
+   "ID": 30007,
+   "eng": "Stomach is rubling."
+  },
+  {
+   "ID": 30008,
+   "eng": "Sudden hunger came. "
+  },
+  {
+   "ID": 30009,
+   "eng": "Thought we found something edible, but wasn't."
+  },
+  {
+   "ID": 30010,
+   "eng": "Stink odor covered nose. "
+  },
+  {
+   "ID": 30011,
+   "eng": "Deeply stabbed by something sharp."
+  },
+  {
+   "ID": 30012,
+   "eng": "Stumbled over rubble."
+  },
+  {
+   "ID": 30013,
+   "eng": "There was a trap underfoot."
+  },
+  {
+   "ID": 30014,
+   "eng": "Who am I, and where am I…."
+  },
+  {
+   "ID": 30015,
+   "eng": "Sat for a while thinking that nothing would happen."
+  },
+  {
+   "ID": 30016,
+   "eng": "Lay for a while thinking that nothing would happen."
+  },
+  {
+   "ID": 30017,
+   "eng": "Found a walkman and listened to music. "
+  },
+  {
+   "ID": 30018,
+   "eng": "Found a tobacco, and burned one."
+  },
+  {
+   "ID": 30019,
+   "eng": "Found fruits, and ate it."
+  },
+  {
+   "ID": 30020,
+   "eng": "Found snacks, and ate it."
+  },
+  {
+   "ID": 30021,
+   "eng": "Found first aid, and took it. "
+  },
+  {
+   "ID": 30022,
+   "eng": "For some reason, felt strength."
+  },
+  {
+   "ID": 50000,
+   "eng": "Wrench Down"
+  },
+  {
+   "ID": 50001,
+   "eng": "Your Jaw!"
+  },
+  {
+   "ID": 50002,
+   "eng": "Push"
+  },
+  {
+   "ID": 50003,
+   "eng": "Wrench Swing"
+  },
+  {
+   "ID": 50004,
+   "eng": "Wrench Throw"
+  },
+  {
+   "ID": 50005,
+   "eng": "Pattern Check"
+  },
+  {
+   "ID": 50006,
+   "eng": "Endure!"
+  },
+  {
+   "ID": 50007,
+   "eng": "Sacrifice"
+  },
+  {
+   "ID": 51000,
+   "eng": "Axe Down"
+  },
+  {
+   "ID": 51001,
+   "eng": "Finish It!"
+  },
+  {
+   "ID": 51002,
+   "eng": "Uppercut"
+  },
+  {
+   "ID": 51003,
+   "eng": "Down Down!"
+  },
+  {
+   "ID": 51004,
+   "eng": "Go Away"
+  },
+  {
+   "ID": 51005,
+   "eng": "Come Here"
+  },
+  {
+   "ID": 51006,
+   "eng": "You Are Doomed"
+  },
+  {
+   "ID": 51007,
+   "eng": "I'm Watching"
+  },
+  {
+   "ID": 52000,
+   "eng": "Stab"
+  },
+  {
+   "ID": 52001,
+   "eng": "Highkick"
+  },
+  {
+   "ID": 52002,
+   "eng": "Stab Down"
+  },
+  {
+   "ID": 52003,
+   "eng": "Eye Slice"
+  },
+  {
+   "ID": 52004,
+   "eng": "Neck Slice"
+  },
+  {
+   "ID": 52005,
+   "eng": "Highknee"
+  },
+  {
+   "ID": 52006,
+   "eng": "Front Shadow"
+  },
+  {
+   "ID": 52007,
+   "eng": "Back Shadow"
   }
  ]
 }

@@ -11,19 +11,16 @@ public class Managers : MonoBehaviour
     public static Managers s_instance = null;
     public static Managers Instance { get { return s_instance; } }
 
-    //private static AdsManager s_adsManager = new AdsManager();
     private static GameManagerEx s_gameManager = new GameManagerEx();
-    //private static IAPManager s_iapManager = new IAPManager();
     private static DataManager s_dataManager = new DataManager();
     private static UIManager s_uiManager = new UIManager();
     private static SceneManagerEx s_sceneManager = new SceneManagerEx();
     //private static SoundManager s_soundManager = new SoundManager();
     private static ResourceManager s_resourceManager = new ResourceManager();
 
+    public static ItemManager Item = new ItemManager();
 
-    //public static AdsManager Ads { get { Init(); return s_adsManager; } }
     public static GameManagerEx Game { get { Init(); return s_gameManager; } }
-    //public static IAPManager IAP { get { Init(); return s_iapManager; } }
     public static DataManager Data { get { Init(); return s_dataManager; } }
     public static UIManager UI { get { Init(); return s_uiManager; } }
     public static SceneManagerEx Scene { get { Init(); return s_sceneManager; } }
@@ -31,15 +28,15 @@ public class Managers : MonoBehaviour
 
     //public static SoundManager Sound {  get { Init(); return s_soundManager; } }
 
-    /*
+    
     public static string GetText(int id)
     {
-        if (Managers.Data.TextDict.TryGetValue(id, out Text value) == false)
+        if (Managers.Data.TextDict.TryGetValue(id, out TextData value) == false)
             return "";
 
-        return value.Replace("{userName}", Managers.Game.Name);
+        return value.eng.Replace("{userName}", Managers.Game.Name);
     }
-    */
+    
 
     private void Start()
     {
@@ -57,8 +54,6 @@ public class Managers : MonoBehaviour
             s_instance = Utils.GetOrAddComponent<Managers>(go);
             DontDestroyOnLoad(go);
 
-            //s_adsManager.Init();
-            //s_iapManager.Init();
             s_dataManager.Init();
             s_sceneManager.Init();
             s_resourceManager.Init();

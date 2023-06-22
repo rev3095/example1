@@ -1,0 +1,25 @@
+{ "skeleton": { "images": "G:/1. Grungescape/spine/barber_d/barber_d_skills/images/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "dodge_shade", "bone": "root", "attachment": "dodge_shade" },
+	{ "name": "dodge", "bone": "root", "attachment": "dodge" },
+	{ "name": "dodge_effect", "bone": "root", "attachment": "dodge_effect" }
+],
+"skins": {
+	"default": {
+		"dodge_shade": {
+			"dodge_shade": { "x": 500, "y": -350, "width": 1002, "height": 702 }
+		},
+		"dodge": {
+			"dodge": { "x": 500, "y": -350, "width": 1002, "height": 702 }
+		},
+		"dodge_effect": {
+			"dodge_effect": { "x": 500, "y": -350, "width": 1002, "height": 702 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

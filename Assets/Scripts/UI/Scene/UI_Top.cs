@@ -62,12 +62,11 @@ public class UI_Top : UI_Scene
     
     void OnClickTeamButton(PointerEventData data)
     {
-        Debug.Log("Button Clicked");
+        Managers.UI.ShowPopupUI<UI_TeamPopup>();
     }
 
     void OnClickMenuButton(PointerEventData data)
     {
-        Debug.Log("Button Clicked");
         Managers.UI.ShowPopupUI<UI_MenuPopup>();
 
     }

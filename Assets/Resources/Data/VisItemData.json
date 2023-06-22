@@ -1,0 +1,235 @@
+{
+  "VisItemDatas":[
+  {
+   "ID": 1,
+   "type": "Note",
+   "nameID": 22000,
+   "iconPath": "Sprites\/Items\/Vis\/Old_man",
+   "detailPath": "Sprites\/Items\/Vis\/Note\/Old_man"
+  },
+  {
+   "ID": 2,
+   "type": "Note",
+   "nameID": 22001,
+   "iconPath": "Sprites\/Items\/Vis\/Galton",
+   "detailPath": "Sprites\/Items\/Vis\/Note\/Galton"
+  },
+  {
+   "ID": 3,
+   "type": "Note",
+   "nameID": 22002,
+   "iconPath": "Sprites\/Items\/Vis\/Weikart",
+   "detailPath": "Sprites\/Items\/Vis\/Note\/Weikart"
+  },
+  {
+   "ID": 4,
+   "type": "Note",
+   "nameID": 22003,
+   "iconPath": "Sprites\/Items\/Vis\/Tesla",
+   "detailPath": "Sprites\/Items\/Vis\/Note\/Tesla"
+  },
+  {
+   "ID": 5,
+   "type": "Note",
+   "nameID": 22004,
+   "iconPath": "Sprites\/Items\/Vis\/Hubbard",
+   "detailPath": "Sprites\/Items\/Vis\/Note\/Hubbard"
+  },
+  {
+   "ID": 6,
+   "type": "Note",
+   "nameID": 22005,
+   "iconPath": "Sprites\/Items\/Vis\/Holmes",
+   "detailPath": "Sprites\/Items\/Vis\/Note\/Holmes"
+  },
+  {
+   "ID": 7,
+   "type": "Note",
+   "nameID": 22006,
+   "iconPath": "Sprites\/Items\/Vis\/Cousteau",
+   "detailPath": "Sprites\/Items\/Vis\/Note\/Cousteau"
+  },
+  {
+   "ID": 8,
+   "type": "Note",
+   "nameID": 22007,
+   "iconPath": "Sprites\/Items\/Vis\/Grant2",
+   "detailPath": "Sprites\/Items\/Vis\/Note\/Grant2"
+  },
+  {
+   "ID": 9,
+   "type": "Note",
+   "nameID": 22008,
+   "iconPath": "Sprites\/Items\/Vis\/Ldarwin",
+   "detailPath": "Sprites\/Items\/Vis\/Note\/Ldarwin"
+  },
+  {
+   "ID": 10,
+   "type": "Note",
+   "nameID": 22009,
+   "iconPath": "Sprites\/Items\/Vis\/Churchill",
+   "detailPath": "Sprites\/Items\/Vis\/Note\/Churchill"
+  },
+  {
+   "ID": 11,
+   "type": "Note",
+   "nameID": 22010,
+   "iconPath": "Sprites\/Items\/Vis\/Grant",
+   "detailPath": "Sprites\/Items\/Vis\/Note\/Grant"
+  },
+  {
+   "ID": 12,
+   "type": "Note",
+   "nameID": 22011,
+   "iconPath": "Sprites\/Items\/Vis\/Cdarwin",
+   "detailPath": "Sprites\/Items\/Vis\/Note\/Cdarwin"
+  },
+  {
+   "ID": 13,
+   "type": "Note",
+   "nameID": 22012,
+   "iconPath": "Sprites\/Items\/Vis\/Sanger",
+   "detailPath": "Sprites\/Items\/Vis\/Note\/Sanger"
+  },
+  {
+   "ID": 14,
+   "type": "Note",
+   "nameID": 22013,
+   "iconPath": "Sprites\/Items\/Vis\/Osborn",
+   "detailPath": "Sprites\/Items\/Vis\/Note\/Osborn"
+  },
+  {
+   "ID": 15,
+   "type": "Note",
+   "nameID": 22014,
+   "iconPath": "Sprites\/Items\/Vis\/Dobzhansky",
+   "detailPath": "Sprites\/Items\/Vis\/Note\/Dobzhansky"
+  },
+  {
+   "ID": 16,
+   "type": "Note",
+   "nameID": 22015,
+   "iconPath": "Sprites\/Items\/Vis\/Turner",
+   "detailPath": "Sprites\/Items\/Vis\/Note\/Turner"
+  },
+  {
+   "ID": 17,
+   "type": "Note",
+   "nameID": 22016,
+   "iconPath": "Sprites\/Items\/Vis\/Russell",
+   "detailPath": "Sprites\/Items\/Vis\/Russell"
+  },
+  {
+   "ID": 18,
+   "type": "Survivor",
+   "nameID": 22020,
+   "iconPath": "Sprites\/Items\/Vis\/S1",
+   "detailPath": "Sprites\/Items\/Vis\/Chipset\/Survivor\/1"
+  },
+  {
+   "ID": 19,
+   "type": "Survivor",
+   "nameID": 22021,
+   "iconPath": "Sprites\/Items\/Vis\/S2",
+   "detailPath": "Sprites\/Items\/Vis\/Chipset\/Survivor\/2"
+  },
+  {
+   "ID": 20,
+   "type": "Survivor",
+   "nameID": 22022,
+   "iconPath": "Sprites\/Items\/Vis\/S3",
+   "detailPath": "Sprites\/Items\/Vis\/Chipset\/Survivor\/3"
+  },
+  {
+   "ID": 21,
+   "type": "Survivor",
+   "nameID": 22023,
+   "iconPath": "Sprites\/Items\/Vis\/S4",
+   "detailPath": "Sprites\/Items\/Vis\/Chipset\/Survivor\/4"
+  },
+  {
+   "ID": 22,
+   "type": "Survivor",
+   "nameID": 22024,
+   "iconPath": "Sprites\/Items\/Vis\/S5",
+   "detailPath": "Sprites\/Items\/Vis\/Chipset\/Survivor\/5"
+  },
+  {
+   "ID": 23,
+   "type": "Survivor",
+   "nameID": 22025,
+   "iconPath": "Sprites\/Items\/Vis\/S6",
+   "detailPath": "Sprites\/Items\/Vis\/Chipset\/Survivor\/6"
+  },
+  {
+   "ID": 24,
+   "type": "Survivor",
+   "nameID": 22026,
+   "iconPath": "Sprites\/Items\/Vis\/S7",
+   "detailPath": "Sprites\/Items\/Vis\/Chipset\/Survivor\/7"
+  },
+  {
+   "ID": 25,
+   "type": "Damaged",
+   "nameID": 22027,
+   "iconPath": "Sprites\/Items\/Vis\/D1",
+   "detailPath": "Sprites\/Items\/Vis\/Chipset\/Damaged\/1"
+  },
+  {
+   "ID": 26,
+   "type": "Damaged",
+   "nameID": 22028,
+   "iconPath": "Sprites\/Items\/Vis\/D2",
+   "detailPath": "Sprites\/Items\/Vis\/Chipset\/Damaged\/2"
+  },
+  {
+   "ID": 27,
+   "type": "Damaged",
+   "nameID": 22029,
+   "iconPath": "Sprites\/Items\/Vis\/D3",
+   "detailPath": "Sprites\/Items\/Vis\/Chipset\/Damaged\/3"
+  },
+  {
+   "ID": 28,
+   "type": "Damaged",
+   "nameID": 22030,
+   "iconPath": "Sprites\/Items\/Vis\/D4",
+   "detailPath": "Sprites\/Items\/Vis\/Chipset\/Damaged\/4"
+  },
+  {
+   "ID": 29,
+   "type": "Damaged",
+   "nameID": 22031,
+   "iconPath": "Sprites\/Items\/Vis\/D5",
+   "detailPath": "Sprites\/Items\/Vis\/Chipset\/Damaged\/5"
+  },
+  {
+   "ID": 30,
+   "type": "Damaged",
+   "nameID": 22032,
+   "iconPath": "Sprites\/Items\/Vis\/D6",
+   "detailPath": "Sprites\/Items\/Vis\/Chipset\/Damaged\/6"
+  },
+  {
+   "ID": 31,
+   "type": "Damaged",
+   "nameID": 22033,
+   "iconPath": "Sprites\/Items\/Vis\/D7",
+   "detailPath": "Sprites\/Items\/Vis\/Chipset\/Damaged\/7"
+  },
+  {
+   "ID": 32,
+   "type": "Damaged",
+   "nameID": 22034,
+   "iconPath": "Sprites\/Items\/Vis\/D8",
+   "detailPath": "Sprites\/Items\/Vis\/Chipset\/Damaged\/8"
+  },
+  {
+   "ID": 33,
+   "type": "Damaged",
+   "nameID": 22035,
+   "iconPath": "Sprites\/Items\/Vis\/D9",
+   "detailPath": "Sprites\/Items\/Vis\/Chipset\/Damaged\/9"
+  }
+ ]
+}

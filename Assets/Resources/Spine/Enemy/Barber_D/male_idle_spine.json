@@ -1,0 +1,17 @@
+{ "skeleton": { "images": "E:/1. Grungescape/spine/barber_d/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "barber_d", "bone": "root", "attachment": "barber_d" }
+],
+"skins": {
+	"default": {
+		"barber_d": {
+			"barber_d": { "x": 250.5, "y": -300, "width": 151, "height": 502 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

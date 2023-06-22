@@ -1,0 +1,211 @@
+{
+  "MoveEventDatas":[
+  {
+   "ID": 1,
+   "nameID": 30000,
+   "difFatigue": 0,
+   "difHunger": 0,
+   "difStress": 0,
+   "isBattle": true,
+   "acqPercent": 0.1
+  },
+  {
+   "ID": 2,
+   "nameID": 30001,
+   "difFatigue": 5,
+   "difHunger": 0,
+   "difStress": 0,
+   "isBattle": false,
+   "acqPercent": 0.04
+  },
+  {
+   "ID": 3,
+   "nameID": 30002,
+   "difFatigue": 5,
+   "difHunger": 0,
+   "difStress": 0,
+   "isBattle": false,
+   "acqPercent": 0.04
+  },
+  {
+   "ID": 4,
+   "nameID": 30003,
+   "difFatigue": 10,
+   "difHunger": 0,
+   "difStress": 0,
+   "isBattle": false,
+   "acqPercent": 0.03
+  },
+  {
+   "ID": 5,
+   "nameID": 30004,
+   "difFatigue": 0,
+   "difHunger": 0,
+   "difStress": 5,
+   "isBattle": false,
+   "acqPercent": 0.04
+  },
+  {
+   "ID": 6,
+   "nameID": 30005,
+   "difFatigue": 0,
+   "difHunger": 0,
+   "difStress": 5,
+   "isBattle": false,
+   "acqPercent": 0.04
+  },
+  {
+   "ID": 7,
+   "nameID": 30006,
+   "difFatigue": 0,
+   "difHunger": 0,
+   "difStress": 10,
+   "isBattle": false,
+   "acqPercent": 0.03
+  },
+  {
+   "ID": 8,
+   "nameID": 30007,
+   "difFatigue": 0,
+   "difHunger": 5,
+   "difStress": 0,
+   "isBattle": false,
+   "acqPercent": 0.04
+  },
+  {
+   "ID": 9,
+   "nameID": 30008,
+   "difFatigue": 0,
+   "difHunger": 5,
+   "difStress": 0,
+   "isBattle": false,
+   "acqPercent": 0.04
+  },
+  {
+   "ID": 10,
+   "nameID": 30009,
+   "difFatigue": 0,
+   "difHunger": 10,
+   "difStress": 0,
+   "isBattle": false,
+   "acqPercent": 0.03
+  },
+  {
+   "ID": 11,
+   "nameID": 30010,
+   "difFatigue": 5,
+   "difHunger": 0,
+   "difStress": 5,
+   "isBattle": false,
+   "acqPercent": 0.02
+  },
+  {
+   "ID": 12,
+   "nameID": 30011,
+   "difFatigue": 5,
+   "difHunger": 5,
+   "difStress": 0,
+   "isBattle": false,
+   "acqPercent": 0.02
+  },
+  {
+   "ID": 13,
+   "nameID": 30012,
+   "difFatigue": 0,
+   "difHunger": 5,
+   "difStress": 5,
+   "isBattle": false,
+   "acqPercent": 0.02
+  },
+  {
+   "ID": 14,
+   "nameID": 30013,
+   "difFatigue": 5,
+   "difHunger": 5,
+   "difStress": 5,
+   "isBattle": false,
+   "acqPercent": 0.005
+  },
+  {
+   "ID": 15,
+   "nameID": 30014,
+   "difFatigue": 10,
+   "difHunger": 10,
+   "difStress": 10,
+   "isBattle": false,
+   "acqPercent": 0.005
+  },
+  {
+   "ID": 16,
+   "nameID": 30015,
+   "difFatigue": -5,
+   "difHunger": 0,
+   "difStress": 0,
+   "isBattle": false,
+   "acqPercent": 0.04
+  },
+  {
+   "ID": 17,
+   "nameID": 30016,
+   "difFatigue": -10,
+   "difHunger": 0,
+   "difStress": 0,
+   "isBattle": false,
+   "acqPercent": 0.02
+  },
+  {
+   "ID": 18,
+   "nameID": 30017,
+   "difFatigue": 0,
+   "difHunger": -5,
+   "difStress": 0,
+   "isBattle": false,
+   "acqPercent": 0.04
+  },
+  {
+   "ID": 19,
+   "nameID": 30018,
+   "difFatigue": 0,
+   "difHunger": -10,
+   "difStress": 0,
+   "isBattle": false,
+   "acqPercent": 0.02
+  },
+  {
+   "ID": 20,
+   "nameID": 30019,
+   "difFatigue": 0,
+   "difHunger": 0,
+   "difStress": -5,
+   "isBattle": false,
+   "acqPercent": 0.04
+  },
+  {
+   "ID": 21,
+   "nameID": 30020,
+   "difFatigue": 0,
+   "difHunger": 0,
+   "difStress": -10,
+   "isBattle": false,
+   "acqPercent": 0.02
+  },
+  {
+   "ID": 22,
+   "nameID": 30021,
+   "difFatigue": -5,
+   "difHunger": -5,
+   "difStress": -5,
+   "isBattle": false,
+   "acqPercent": 0.015
+  },
+  {
+   "ID": 23,
+   "nameID": 30022,
+   "difFatigue": -10,
+   "difHunger": -10,
+   "difStress": -10,
+   "isBattle": false,
+   "acqPercent": 0.005
+  }
+ ]
+}

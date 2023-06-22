@@ -23,13 +23,3 @@ public class UI_EventHandler : MonoBehaviour, IPointerClickHandler, IDragHandler
 			OnDragHandler.Invoke(eventData); // 드래그와 관련된 이벤트 실행
     }
 }
-
-/*
- * 	bool _pressed = false;
-
-	private void Update()
-	{
-		if (_pressed)
-			OnPressedHandler?.Invoke();
-	}
-*/

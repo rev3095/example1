@@ -1,0 +1,25 @@
+{ "skeleton": { "images": "G:/1. Grungescape/spine/barber_d/barber_d_skills/images/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "neck_stab_shade", "bone": "root", "attachment": "neck_stab_shade" },
+	{ "name": "neck_stab", "bone": "root", "attachment": "neck_stab" },
+	{ "name": "neck_stab_effect", "bone": "root", "attachment": "neck_stab_effect" }
+],
+"skins": {
+	"default": {
+		"neck_stab_shade": {
+			"neck_stab_shade": { "x": 500, "y": -350, "width": 1002, "height": 702 }
+		},
+		"neck_stab": {
+			"neck_stab": { "x": 500, "y": -350, "width": 1002, "height": 702 }
+		},
+		"neck_stab_effect": {
+			"neck_stab_effect": { "x": 500, "y": -350, "width": 1002, "height": 702 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

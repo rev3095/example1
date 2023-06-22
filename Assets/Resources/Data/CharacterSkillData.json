@@ -1,0 +1,220 @@
+{
+  "CharacterSkillDatas":[
+  {
+   "ID": 1,
+   "nameID": 50000,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/PlayerSkill\/wrench_down",
+   "type": "M",
+   "applyDmg": 1,
+   "difAcc": 0.05,
+   "difCrt": 0.07
+  },
+  {
+   "ID": 2,
+   "nameID": 50001,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/PlayerSkill\/your_jaw",
+   "type": "M",
+   "applyDmg": 0.5,
+   "difAcc": 0.1,
+   "difCrt": 0
+  },
+  {
+   "ID": 3,
+   "nameID": 50002,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/PlayerSkill\/push",
+   "type": "M",
+   "applyDmg": 0.5,
+   "difAcc": 0.1,
+   "difCrt": 0
+  },
+  {
+   "ID": 4,
+   "nameID": 50003,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/PlayerSkill\/wrench_swing",
+   "type": "G",
+   "applyDmg": 0.7,
+   "difAcc": 0.1,
+   "difCrt": 0.05
+  },
+  {
+   "ID": 5,
+   "nameID": 50004,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/PlayerSkill\/wrench_throw",
+   "type": "R",
+   "applyDmg": 0.7,
+   "difAcc": -0.1,
+   "difCrt": 0.05
+  },
+  {
+   "ID": 6,
+   "nameID": 50005,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/PlayerSkill\/pattern_check",
+   "type": "D",
+   "applyDmg": 0,
+   "difAcc": 0,
+   "difCrt": 0
+  },
+  {
+   "ID": 7,
+   "nameID": 50006,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/PlayerSkill\/endure",
+   "type": "B",
+   "applyDmg": 0,
+   "difAcc": 0,
+   "difCrt": 0
+  },
+  {
+   "ID": 8,
+   "nameID": 50007,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/PlayerSkill\/sacrifice",
+   "type": "B",
+   "applyDmg": 0,
+   "difAcc": 0,
+   "difCrt": 0
+  },
+  {
+   "ID": 9,
+   "nameID": 51000,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/ChloeSkill\/axe_down",
+   "type": "M",
+   "applyDmg": 1,
+   "difAcc": 0,
+   "difCrt": 0.07
+  },
+  {
+   "ID": 10,
+   "nameID": 51001,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/ChloeSkill\/finish_it",
+   "type": "M",
+   "applyDmg": 1,
+   "difAcc": -0.1,
+   "difCrt": 0.1
+  },
+  {
+   "ID": 11,
+   "nameID": 51002,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/ChloeSkill\/Uppercut",
+   "type": "M",
+   "applyDmg": 0.5,
+   "difAcc": 0.1,
+   "difCrt": 0
+  },
+  {
+   "ID": 12,
+   "nameID": 51003,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/ChloeSkill\/down_down",
+   "type": "M",
+   "applyDmg": 0.5,
+   "difAcc": 0.1,
+   "difCrt": 0
+  },
+  {
+   "ID": 13,
+   "nameID": 51004,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/ChloeSkill\/go_away",
+   "type": "M",
+   "applyDmg": 0.5,
+   "difAcc": 0.1,
+   "difCrt": 0.05
+  },
+  {
+   "ID": 14,
+   "nameID": 51005,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/ChloeSkill\/come_here",
+   "type": "R",
+   "applyDmg": 0.5,
+   "difAcc": 0.05,
+   "difCrt": 0.05
+  },
+  {
+   "ID": 15,
+   "nameID": 51006,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/ChloeSkill\/you_are_doomed",
+   "type": "D",
+   "applyDmg": 0,
+   "difAcc": 0,
+   "difCrt": 0
+  },
+  {
+   "ID": 16,
+   "nameID": 51007,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/ChloeSkill\/im_watching",
+   "type": "B",
+   "applyDmg": 0,
+   "difAcc": 0,
+   "difCrt": 0
+  },
+  {
+   "ID": 17,
+   "nameID": 52000,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/SvanaSkill\/stab",
+   "type": "M",
+   "applyDmg": 1,
+   "difAcc": -0.1,
+   "difCrt": 0.15
+  },
+  {
+   "ID": 18,
+   "nameID": 52001,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/SvanaSkill\/highkick",
+   "type": "M",
+   "applyDmg": 1,
+   "difAcc": 0.1,
+   "difCrt": 0.05
+  },
+  {
+   "ID": 19,
+   "nameID": 52002,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/SvanaSkill\/stab_down",
+   "type": "M",
+   "applyDmg": 1,
+   "difAcc": 0,
+   "difCrt": 0.1
+  },
+  {
+   "ID": 20,
+   "nameID": 52003,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/SvanaSkill\/eye_slice",
+   "type": "R",
+   "applyDmg": 0.5,
+   "difAcc": 0.1,
+   "difCrt": 0
+  },
+  {
+   "ID": 21,
+   "nameID": 52004,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/SvanaSkill\/neck_slice",
+   "type": "R",
+   "applyDmg": 0.5,
+   "difAcc": 0.1,
+   "difCrt": 0
+  },
+  {
+   "ID": 22,
+   "nameID": 52005,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/SvanaSkill\/highknee",
+   "type": "D",
+   "applyDmg": 0,
+   "difAcc": 0,
+   "difCrt": 0
+  },
+  {
+   "ID": 23,
+   "nameID": 52006,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/SvanaSkill\/front_shadow",
+   "type": "D",
+   "applyDmg": 0,
+   "difAcc": 0,
+   "difCrt": 0
+  },
+  {
+   "ID": 24,
+   "nameID": 52007,
+   "iconPath": "Sprites\/UI\/Battle\/Skill\/SvanaSkill\/back_shadow",
+   "type": "B",
+   "applyDmg": 0,
+   "difAcc": 0,
+   "difCrt": 0
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{ "skeleton": { "images": "G:/1. Grungescape/spine/barber_d/barber_d_skills/images/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "scissors_throw_shade", "bone": "root", "attachment": "scissors_throw_shade" },
+	{ "name": "scissors_throw", "bone": "root", "attachment": "scissors_throw" },
+	{ "name": "scissors_throw_obj_shade", "bone": "root", "attachment": "scissors_throw_obj_shade" },
+	{ "name": "scissors_throw_obj", "bone": "root", "attachment": "scissors_throw_obj" },
+	{ "name": "scissors_throw_effect", "bone": "root", "attachment": "scissors_throw_effect" }
+],
+"skins": {
+	"default": {
+		"scissors_throw_shade": {
+			"scissors_throw_shade": { "x": 500, "y": -350, "width": 1002, "height": 702 }
+		},
+		"scissors_throw": {
+			"scissors_throw": { "x": 500, "y": -350, "width": 1002, "height": 702 }
+		},
+		"scissors_throw_obj_shade": {
+			"scissors_throw_obj_shade": { "x": 500, "y": -350, "width": 1002, "height": 702 }
+		},
+		"scissors_throw_obj": {
+			"scissors_throw_obj": { "x": 500, "y": -350, "width": 1002, "height": 702 }
+		},
+		"scissors_throw_effect": {
+			"scissors_throw_effect": { "x": 500, "y": -350, "width": 1002, "height": 702 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

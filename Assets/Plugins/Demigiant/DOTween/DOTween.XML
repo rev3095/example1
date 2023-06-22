@@ -107,7 +107,7 @@
         </member>
         <member name="M:DG.Tweening.Core.Easing.Bounce.EaseInOut(System.Single,System.Single,System.Single,System.Single)">
             <summary>
-            Easing equation function for a bounce (exponentially decaying parabolic bounce) easing in/out: acceleration until halfway, then deceleration.
+            Easing equation function for a bounce (exponentially decaying parabolic bounce) easing in/out: Acceleration until halfway, then deceleration.
             </summary>
             <param name="time">
             Current time (in frames or seconds).

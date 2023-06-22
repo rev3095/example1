@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using static Define;
+using DG.Tweening;
 
 public class UI_TitlePopup : UI_Popup
 {
@@ -58,7 +59,7 @@ public class UI_TitlePopup : UI_Popup
 		BindText(typeof(Texts));
 		BindButton(typeof(Buttons));
 		BindImage(typeof(Images));
-		;
+		
 		GetButton((int)Buttons.StartButton).gameObject.BindEvent(OnClickStartButton);
 		GetButton((int)Buttons.OptionButton).gameObject.BindEvent(OnClickOptionButton);
 		GetButton((int)Buttons.CreditsButton).gameObject.BindEvent(OnClickCreditsButton);
@@ -156,6 +157,8 @@ public class UI_TitlePopup : UI_Popup
 	//계속 이 코루틴을 실행시키되, 불리언 값으로 Update처럼 처리를 받는거임. 그러면 결국은 Update와 똑같은 기능을 하게 됨.
 	IEnumerator FadeAlternativeImage()
 	{
+		Transform transform;
+
 		while (isPlay)
 		{
 
@@ -165,6 +168,7 @@ public class UI_TitlePopup : UI_Popup
 
 				if (isPlay)
 				{
+					transform = targetImage.gameObject.transform;
 					targetImage.sprite = images[i];
 					targetImage.gameObject.SetActive(true);
 					for (float f = 0f; f < 1.2; f += 0.01f)
@@ -172,6 +176,8 @@ public class UI_TitlePopup : UI_Popup
 						Color c = targetImage.color;
 						c.a = f;
 						targetImage.color = c;
+						transform.DORotate(new Vector3(0f, 0f,5f), 10.0f , RotateMode.WorldAxisAdd);
+						//transform.DOPunchScale (new Vector3(0,0,0));
 						yield return null;
 					}
 					yield return new WaitForSeconds(2f);
@@ -184,6 +190,7 @@ public class UI_TitlePopup : UI_Popup
 							Color c = targetImage.color;
 							c.a = 1 - f;
 							targetImage.color = c;
+							transform.DORotate(new Vector3(0f, 0f, -5f), 10.0f, RotateMode.WorldAxisAdd);
 							yield return null;
 						}
 						targetImage.gameObject.SetActive(false);

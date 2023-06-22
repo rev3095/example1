@@ -1,0 +1,64 @@
+{
+  "AccItemDatas":[
+  {
+   "ID": 1,
+   "nameID": 23000,
+   "iconPath": "Sprites\/Items\/Acc\/bracelet"
+  },
+  {
+   "ID": 2,
+   "nameID": 23001,
+   "iconPath": "Sprites\/Items\/Acc\/diamond_ring"
+  },
+  {
+   "ID": 3,
+   "nameID": 23002,
+   "iconPath": "Sprites\/Items\/Acc\/XTECH_brochure"
+  },
+  {
+   "ID": 4,
+   "nameID": 23003,
+   "iconPath": "Sprites\/Items\/Acc\/XTECH_brochure-2"
+  },
+  {
+   "ID": 5,
+   "nameID": 23004,
+   "iconPath": "Sprites\/Items\/Acc\/vr_gear"
+  },
+  {
+   "ID": 6,
+   "nameID": 23005,
+   "iconPath": "Sprites\/Items\/Acc\/xperience_brochure"
+  },
+  {
+   "ID": 7,
+   "nameID": 23006,
+   "iconPath": "Sprites\/Items\/Acc\/mma_gloves"
+  },
+  {
+   "ID": 8,
+   "nameID": 23007,
+   "iconPath": "Sprites\/Items\/Acc\/handcuffs"
+  },
+  {
+   "ID": 9,
+   "nameID": 23008,
+   "iconPath": "Sprites\/Items\/Acc\/nine_pilgrims_brochure"
+  },
+  {
+   "ID": 10,
+   "nameID": 23009,
+   "iconPath": "Sprites\/Items\/Acc\/cross"
+  },
+  {
+   "ID": 11,
+   "nameID": 23010,
+   "iconPath": "Sprites\/Items\/Acc\/nine_pilgrims_ring"
+  },
+  {
+   "ID": 12,
+   "nameID": 23011,
+   "iconPath": "Sprites\/Items\/Acc\/nine_pilgrims_bible"
+  }
+ ]
+}

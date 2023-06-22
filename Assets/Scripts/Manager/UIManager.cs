@@ -12,6 +12,8 @@ public class UIManager
 
     public UI_Scene SceneUI { get; private set; }
 
+    public UI_Popup PopupUI { get; private set; }
+
     public GameObject Root
     {
         get
@@ -58,7 +60,7 @@ public class UIManager
         if (string.IsNullOrEmpty(name))
             name = typeof(T).Name;
 
-        GameObject prefab = Utils.Load<GameObject>($"Prefabs/UI//{name}");
+        GameObject prefab = Utils.Load<GameObject>($"Prefabs/UI/SubItem/{name}");
 
         GameObject go = Object.Instantiate(prefab);
         if (parent != null)
@@ -106,6 +108,7 @@ public class UIManager
         else
             go.transform.SetParent(Root.transform);
 
+        go.name = name;
         go.transform.localScale = Vector3.one;
         go.transform.localPosition = prefab.transform.position;
 

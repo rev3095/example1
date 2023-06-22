@@ -1,0 +1,76 @@
+{
+  "InteractionDatas":[
+  {
+   "ID": 1,
+   "type": "out",
+   "difFatigue": 0,
+   "difHunger": 0,
+   "difStress": 0,
+   "battlePercent": 0.2
+  },
+  {
+   "ID": 2,
+   "type": "out",
+   "difFatigue": 0,
+   "difHunger": 0,
+   "difStress": 0,
+   "battlePercent": 0.2
+  },
+  {
+   "ID": 3,
+   "type": "out",
+   "difFatigue": 10,
+   "difHunger": 10,
+   "difStress": 10,
+   "battlePercent": 0.4
+  },
+  {
+   "ID": 4,
+   "type": "out",
+   "difFatigue": 5,
+   "difHunger": 5,
+   "difStress": 5,
+   "battlePercent": 0.2
+  },
+  {
+   "ID": 5,
+   "type": "out",
+   "difFatigue": 0,
+   "difHunger": 0,
+   "difStress": 0,
+   "battlePercent": 0
+  },
+  {
+   "ID": 6,
+   "type": "in",
+   "difFatigue": 0,
+   "difHunger": 0,
+   "difStress": 0,
+   "battlePercent": 0
+  },
+  {
+   "ID": 7,
+   "type": "in",
+   "difFatigue": 0,
+   "difHunger": 0,
+   "difStress": 0,
+   "battlePercent": 0
+  },
+  {
+   "ID": 8,
+   "type": "in",
+   "difFatigue": -10,
+   "difHunger": -10,
+   "difStress": -10,
+   "battlePercent": 0.2
+  },
+  {
+   "ID": 9,
+   "type": "in",
+   "difFatigue": 0,
+   "difHunger": 0,
+   "difStress": 0,
+   "battlePercent": 0
+  }
+ ]
+}

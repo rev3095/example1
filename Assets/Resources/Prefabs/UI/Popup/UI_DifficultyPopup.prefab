@@ -1167,6 +1167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   txt1: {fileID: 6116009132060883796}
   txt2: {fileID: 6116009131483978931}
+  handler: {fileID: 0}
 --- !u!1001 &3681438676683226649
 PrefabInstance:
   m_ObjectHideFlags: 0

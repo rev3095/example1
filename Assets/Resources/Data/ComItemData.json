@@ -1,0 +1,74 @@
+{
+  "ComItemDatas":[
+  {
+   "ID": 1,
+   "nameID": 21000,
+   "difMinHP": 5,
+   "difMaxHP": 10,
+   "difACC": 0,
+   "difDGE": 0,
+   "difCRT": 0,
+   "difSPD": 0,
+   "duration": 0,
+   "efficacy": false,
+   "acqPercent": 0.5,
+   "iconPath": "Sprites\/Items\/Com\/band_aid"
+  },
+  {
+   "ID": 2,
+   "nameID": 21001,
+   "difMinHP": 10,
+   "difMaxHP": 15,
+   "difACC": 0,
+   "difDGE": 0,
+   "difCRT": 0,
+   "difSPD": 0,
+   "duration": 0,
+   "efficacy": false,
+   "acqPercent": 0.2,
+   "iconPath": "Sprites\/Items\/Com\/bandage"
+  },
+  {
+   "ID": 3,
+   "nameID": 21002,
+   "difMinHP": 15,
+   "difMaxHP": 20,
+   "difACC": 0,
+   "difDGE": 0,
+   "difCRT": 0,
+   "difSPD": 0,
+   "duration": 0,
+   "efficacy": false,
+   "acqPercent": 0.1,
+   "iconPath": "Sprites\/Items\/Com\/first_aid_kit"
+  },
+  {
+   "ID": 4,
+   "nameID": 21003,
+   "difMinHP": 0,
+   "difMaxHP": 0,
+   "difACC": 0,
+   "difDGE": -5,
+   "difCRT": -5,
+   "difSPD": 0,
+   "duration": 4,
+   "efficacy": true,
+   "acqPercent": 0.1,
+   "iconPath": "Sprites\/Items\/Com\/detoxicant"
+  },
+  {
+   "ID": 5,
+   "nameID": 21004,
+   "difMinHP": 0,
+   "difMaxHP": 0,
+   "difACC": 5,
+   "difDGE": 5,
+   "difCRT": 5,
+   "difSPD": -2,
+   "duration": 4,
+   "efficacy": false,
+   "acqPercent": 0.1,
+   "iconPath": "Sprites\/Items\/Com\/sedative"
+  }
+ ]
+}
