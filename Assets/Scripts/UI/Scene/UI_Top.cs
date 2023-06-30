@@ -38,11 +38,6 @@ public class UI_Top : UI_Scene
 
     }
 
-    private void Start()
-    {
-        Init();
-    }
-
     public override void Init()
     { 
         base.Init();
@@ -53,8 +48,18 @@ public class UI_Top : UI_Scene
         GetButton((int)Buttons.TeamButton).gameObject.BindEvent(OnClickTeamButton);
         GetButton((int)Buttons.MenuButton).gameObject.BindEvent(OnClickMenuButton);
 
+        Managers.Game.Top_Script = this;
     }
 
+    public void Refresh()
+    {
+        GetText((int)Texts.FatigueCurText).text = $"{Managers.Game.CurFatigue}";
+        GetText((int)Texts.HungerCurText).text = $"{Managers.Game.CurHunger}";
+        GetText((int)Texts.StressCurText).text = $"{Managers.Game.CurStress}";
+
+    }
+
+    #region OnClick Function
     void OnClickBagButton(PointerEventData data)
     {
         Managers.UI.ShowPopupUI<UI_InvenPopup>();
@@ -70,5 +75,6 @@ public class UI_Top : UI_Scene
         Managers.UI.ShowPopupUI<UI_MenuPopup>();
 
     }
+    #endregion
 
 }

@@ -22,6 +22,7 @@ public class ItemManager
     public void Refresh()
     {
         ui_InvenPopup.SetCurValueText();
+        //sprite 초기값으로 변경
     }
 
 

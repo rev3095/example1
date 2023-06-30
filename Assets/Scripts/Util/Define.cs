@@ -49,14 +49,19 @@ public class Define
 	public const int MAX_ROOM_COUNT_10F = 18;
 	public enum CheckedRoom
 	{
-		Default,
+		Default =0,
+		Checked,
+	}
+
+	public enum InteractionType
+    {
+		Default =0,
 		Open,
 		Knock,
 		Break,
 		Eavedrop,
 		Leave,
 	}
-
 	public enum StatType
     {
 		
@@ -80,6 +85,9 @@ public class Define
 		Accessories,
 	}
 
+	//Data Max Count
+	public const int MAX_MOVEEVENT_COUNT = 23;
+	public const int MAX_INTERACTION_COUNT = 9;
 	//UI Texts -> GetText(nameID)로 바로 사용하기 위한 명시적 const 변수
 	public const int MAX_INVEN_COUNT = 15;
 	public const int MAX_VIS_COUNT = 33;

@@ -60,7 +60,7 @@ public class UI_MenuPopup : UI_Popup
 
     void OnClickTutorialButton(PointerEventData data)
     {
-        //Managers.UI.ShowPopupUI<UI_TutorialPopup>();
+        Managers.UI.ShowPopupUI<UI_TutorialPopup>();
     }
 
     void OnClickOptionButton(PointerEventData data)

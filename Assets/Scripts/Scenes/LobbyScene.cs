@@ -6,7 +6,27 @@ using System.Linq;
 
 public class LobbyScene : BaseScene
 {
+    [SerializeField] private UI_Top Top;
+    [SerializeField] private UI_Main Main;
 
+    private void Start()
+    {
+        Init();
+
+        Managers.Game.Top_Object = Top.gameObject;
+        Managers.Game.Top_Script = Top;
+
+        Managers.Game.Main_Script = Main;
+
+        Managers.Game.Top_Script.Init();
+        Managers.Game.Main_Script.Init();
+
+        Managers.Game.RefreshLobbyUI();
+
+        //Main UI의 Camera Position 및 PlayerLocation 프리펩 설정
+
+
+    }
     protected override void Init()
     {
         base.Init();
@@ -31,10 +51,12 @@ public class LobbyScene : BaseScene
 
             Managers.Game.SaveData.IsFirstStart = true;
 
-            Managers.Game.SaveGame();
+            //Managers.Game.SaveGame();
         }
     }
-
+    
+    //UI_Top을 Scene 프리펩으로 생성 후, OnDestroy(obj)를 통해 삭제 처리 했는데, 그냥 프리펩말고 Main처럼 원래 Scene이 가지고 있도록 하기.
+    //대신 Refresh는 해주기. -> 싱글톤 함수 호출, Managers.Game.RefreshLobbyUI()로 해주고, 이건 UI_Top.Refresh를 실행시켜준다.
     public override void Clear()
     {
         Debug.Log("TitleScene Clear!");

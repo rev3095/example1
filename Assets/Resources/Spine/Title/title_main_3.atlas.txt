@@ -1,0 +1,6 @@
+title_main_3.png
+size:1746,1086
+filter:Linear,Linear
+pma:true
+title_main_3
+bounds:2,2,1742,1082

@@ -1,0 +1,16 @@
+front_sprite_walk.png
+size:1334,1106
+filter:Linear,Linear
+pma:true
+body
+bounds:2,554,550,664
+rotate:90
+head
+bounds:668,554,550,664
+rotate:90
+leg_l
+bounds:2,2,550,664
+rotate:90
+leg_r
+bounds:668,2,550,664
+rotate:90

@@ -9,7 +9,9 @@ using static Define;
 public interface IItemData
 {
     ItemDataType GetItemType { get; }
+
     int GetID { get ; }
+
     string GetIconPath { get; }
 }
 
@@ -31,6 +33,7 @@ public class UI_Inven_Item : UI_Base
 
     [SerializeField] public Image Slot;
     [SerializeField] public Image SlotItem;
+
 
     IItemData selectedItemData;
     
@@ -105,4 +108,3 @@ public class UI_Inven_Item : UI_Base
     }
 
 }
-

@@ -1,0 +1,6 @@
+title_main_7.png
+size:1926,1086
+filter:Linear,Linear
+pma:true
+title_main_7
+bounds:2,2,1922,1082

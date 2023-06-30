@@ -14,11 +14,9 @@ public class UI_SelectPopup: UI_Popup
 {
     public TMP_Text[] slotText; // 슬롯버튼 아래에 존재하는 Text들
 
-
-
     public string nowtime;
 
-    bool[] saveFile = new bool[4]; //세이브 파일 존재 유무 저장
+    public static bool[] saveFile = new bool[4]; //세이브 파일 존재 유무 저장
     enum Texts
     {
         LoadText,
@@ -75,13 +73,6 @@ public class UI_SelectPopup: UI_Popup
         GetButton((int)Buttons.LoadSlot_3).gameObject.BindEvent(OnClickLoadSlot_3);
         GetButton((int)Buttons.LoadSlot_4).gameObject.BindEvent(OnClickLoadSlot_4);
 
-        /*
-        GetText((int)Texts.LoadSlotText_1).text = Managers.Game.Name + " " + GameManagerEx.TimeUtils.GetCurrentDate() + " " + Managers.Game.CurFloor +"F"+ " " + Managers.Game.Difficulty;
-        GetText((int)Texts.LoadSlotText_2).text = Managers.Game.Name + " " + nowtime.ToString("yyyy-MM-dd") + " " + Managers.Game.CurFloor + " " + Managers.Game.Difficulty;
-        GetText((int)Texts.LoadSlotText_3).text = Managers.Game.Name + " " + nowtime.ToString("yyyy-MM-dd") + " " + Managers.Game.CurFloor + " " + Managers.Game.Difficulty;
-        GetText((int)Texts.LoadSlotText_4).text = Managers.Game.Name + " " + nowtime.ToString("yyyy-MM-dd") + " " + Managers.Game.CurFloor + " " + Managers.Game.Difficulty;
-        */
-
     }
 
     //이름 가져올때 데이터 로드하는데, 이름 가져올려고 로드한거기 때문에 Init()을 해줘야함.
@@ -95,8 +86,10 @@ public class UI_SelectPopup: UI_Popup
 
             if (saveFile[Managers.Game.nowSlot])
             {
+                Managers.Game.SaveGame(); //nowSlot 저장
+
                 Managers.Game.LoadGame();
-                GoLobbyPopup();
+                GoLobbyScene();
             }
             // bool 배열에서 현재 슬롯번호가 false라면 데이터가 없다는 뜻
 
@@ -109,7 +102,9 @@ public class UI_SelectPopup: UI_Popup
                 //여기서, GoLobbyPopup()에서 time 저장하던걸 실행
                 Managers.Game.Init();
                 Managers.Game.SaveData.time = nowtime;
+
                 Managers.Game.SaveGame();
+
                 Managers.UI.ShowPopupUI<UI_NamePopup>();
 
 
@@ -211,6 +206,7 @@ public class UI_SelectPopup: UI_Popup
     //UI SaveSlot 표시용 임시 데이터 처리
     public void RefreshUI() {
 
+        //NOT Managers.Game.SaveData, 슬롯에 표현할 데이터를 가져올 임시 Data, 시작될때마다 new 시킴.
         GameData TempData = new GameData();
         //if (IsNormal == true) if (isHard ==true);로 return 코드 작성 (밸런스는 Enemy 스탯 1.5배 높여서 스탯 데이터 작성)
         for (int i = 0; i < 4; i++)
@@ -237,7 +233,7 @@ public class UI_SelectPopup: UI_Popup
         //오늘코딩씨는 Json파일 (startdata)을 가져올 필요가 없어서 DataClear를 했던 거임, 지금은 쓰면 날라가서 X
     }
 
-    public void GoLobbyPopup()
+    public void GoLobbyScene()
     {
         nowtime = GameManagerEx.TimeUtils.GetCurrentDate();
         Managers.Game.SaveData.time = nowtime;

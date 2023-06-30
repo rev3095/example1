@@ -54,7 +54,7 @@ public class UI_Main : UI_Base
 
     enum GameObjects
     {
-        MovePoints,
+        _MovePoints,
         PlayerLocation,
         Rooms,
         Doors,
@@ -85,31 +85,28 @@ public class UI_Main : UI_Base
     #endregion
     public float lerpDuration = 1.0f;
 
+    public static Transform[] possiblePosition_10F = new Transform[MAX_MOVEPOINT_COUNT];
     public GameObject nowPlayerObj;
     public LobbyCameraController lobbyCameraController = new LobbyCameraController();
 
-    public static Transform[] possiblePosition_10F = new Transform[11];
-    public Button[] movePoints = new Button[11];
+    private Button[] _MovePoints = new Button[11];
+    private Button[] _Doors = new Button[18];
 
+    private const int MAX_MOVEPOINT_COUNT = 11;
+    private const int MIN_DOOR_COUNT = 11;
+    private const int MAX_DOOR_COUNT = 28;
 
-
-
-    private void Start()
-    {
-        Init();
-    }
 
     public void Update()
     {
-        CheckMovePointState();
+        Check_MovePointstate();
+        CheckDoorState();
     }
     public override void Init()
     {
         BindButton(typeof(Buttons));
         BindObject(typeof(GameObjects));
         BindImage(typeof(Images));
-
-        nowPlayerObj = GetObject((int)GameObjects.PlayerLocation);
 
         #region GetButton_MP
         GetButton((int)Buttons.MP_1).gameObject.BindEvent(OnClickMP_1);
@@ -149,20 +146,37 @@ public class UI_Main : UI_Base
         CheckRoomState();
 
         //LobbyCameraController에서 순서 문제로 이동
-        for (int i = 0; i < 11; i++)
+        for (int i = 0; i < MAX_MOVEPOINT_COUNT; i++)
         {
             possiblePosition_10F[i] = GetButton((int)(UI_Main.Buttons)i).transform;
-            movePoints[i] = GetButton((int)(UI_Main.Buttons)i);
+            _MovePoints[i] = GetButton((int)(UI_Main.Buttons)i);
+        }
+        for(int i = MIN_DOOR_COUNT; i< MAX_DOOR_COUNT+1; i++)
+        {
+            _Doors[i-MIN_DOOR_COUNT] = GetButton((int)(UI_Main.Buttons)i);
         }
 
-        CheckMovePointState();
+        Check_MovePointstate();
+
+        lobbyCameraController.SetCamera();
+        nowPlayerObj.transform.position = new Vector3(possiblePosition_10F[Managers.Game.nowMP].position.x, possiblePosition_10F[Managers.Game.nowMP].position.y, 0);
 
         StartCoroutine(CoSaveGame(3.0f));
 
     }
 
     #region OnClickMP
-    
+
+    void CheckMoveEvent()
+    {
+        MoveEventData data = Managers.Game.GetMoveEvent();
+        if (data.ID != 0)
+        {
+            Managers.UI.ShowPopupUI<UI_MoveEventPopup>().SetInfo(data);
+        }
+
+    }
+
     //nowMP -> Button transform position -> MoveCamera -> DOTween -> Event Code (MoveEventData)
 
     void OnClickMP_1(PointerEventData data)
@@ -170,12 +184,15 @@ public class UI_Main : UI_Base
         Managers.Game.nowMP = 0;
         nowPlayerObj.transform.DOMove(GetButton((int)Buttons.MP_1).transform.position, lerpDuration);
         lobbyCameraController.MoveCamera();
+
+        CheckMoveEvent();
     }
     void OnClickMP_2(PointerEventData data)
     {
         Managers.Game.nowMP = 1;
         nowPlayerObj.transform.DOMove(GetButton((int)Buttons.MP_2).transform.position, lerpDuration);
         lobbyCameraController.MoveCamera();
+        CheckMoveEvent();
 
     }
     void OnClickMP_3(PointerEventData data)
@@ -183,6 +200,9 @@ public class UI_Main : UI_Base
         Managers.Game.nowMP = 2;
         nowPlayerObj.transform.DOMove(GetButton((int)Buttons.MP_3).transform.position, lerpDuration);
         lobbyCameraController.MoveCamera();
+        CheckMoveEvent();
+
+
 
     }
     void OnClickMP_4(PointerEventData data)
@@ -190,6 +210,9 @@ public class UI_Main : UI_Base
         Managers.Game.nowMP = 3;
         nowPlayerObj.transform.DOMove(GetButton((int)Buttons.MP_4).transform.position, lerpDuration);
         lobbyCameraController.MoveCamera();
+
+        CheckMoveEvent();
+
 
     }
     void OnClickMP_5(PointerEventData data)
@@ -247,84 +270,109 @@ public class UI_Main : UI_Base
     void OnClickDoor_1013(PointerEventData data)
     {
         Managers.Game.CurRoom = 0;
-        Managers.Game.checkedRoom[Managers.Game.CurRoom] = Define.CheckedRoom.Open;
+        Managers.Game.checkedRoom[Managers.Game.CurRoom] = Define.CheckedRoom.Checked;
         CheckRoomState();
     }
     void OnClickDoor_1012(PointerEventData data)
     {
         Managers.Game.CurRoom = 1;
-        Managers.Game.checkedRoom[Managers.Game.CurRoom] = Define.CheckedRoom.Open;
+        Managers.Game.checkedRoom[Managers.Game.CurRoom] = Define.CheckedRoom.Checked;
         CheckRoomState();
     }
     void OnClickDoor_1011(PointerEventData data)
     {
         Managers.Game.CurRoom = 2;
+        Managers.Game.checkedRoom[Managers.Game.CurRoom] = Define.CheckedRoom.Checked;
+
         CheckRoomState();
 
     }
     void OnClickDoor_1010(PointerEventData data)
     {
         Managers.Game.CurRoom = 3;
+        Managers.Game.checkedRoom[Managers.Game.CurRoom] = Define.CheckedRoom.Checked;
+
         CheckRoomState();
 
     }
     void OnClickDoor_1009(PointerEventData data)
     {
         Managers.Game.CurRoom = 4;
+        Managers.Game.checkedRoom[Managers.Game.CurRoom] = Define.CheckedRoom.Checked;
+
         CheckRoomState();
 
     }
     void OnClickDoor_1008(PointerEventData data)
     {
         Managers.Game.CurRoom = 5;
+        Managers.Game.checkedRoom[Managers.Game.CurRoom] = Define.CheckedRoom.Checked;
+
         CheckRoomState();
 
     }
+
     void OnClickDoor_1007(PointerEventData data)
     {
         Managers.Game.CurRoom = 6;
+        Managers.Game.checkedRoom[Managers.Game.CurRoom] = Define.CheckedRoom.Checked;
+
         CheckRoomState();
 
     }
     void OnClickDoor_1006(PointerEventData data)
     {
         Managers.Game.CurRoom = 7;
+        Managers.Game.checkedRoom[Managers.Game.CurRoom] = Define.CheckedRoom.Checked;
+
         CheckRoomState();
 
     }
     void OnClickDoor_1005(PointerEventData data)
     {
         Managers.Game.CurRoom = 8;
+        Managers.Game.checkedRoom[Managers.Game.CurRoom] = Define.CheckedRoom.Checked;
+
         CheckRoomState();
 
     }
     void OnClickDoor_1004(PointerEventData data)
     {
         Managers.Game.CurRoom = 9;
+        Managers.Game.checkedRoom[Managers.Game.CurRoom] = Define.CheckedRoom.Checked;
+
         CheckRoomState();
 
     }
     void OnClickDoor_1003(PointerEventData data)
     {
         Managers.Game.CurRoom = 10;
+        Managers.Game.checkedRoom[Managers.Game.CurRoom] = Define.CheckedRoom.Checked;
+
         CheckRoomState();
 
     }
     void OnClickDoor_1002(PointerEventData data)
     {
         Managers.Game.CurRoom = 11;
+        Managers.Game.checkedRoom[Managers.Game.CurRoom] = Define.CheckedRoom.Checked;
+
         CheckRoomState();
 
     }
     void OnClickDoor_1001(PointerEventData data)
     {
         Managers.Game.CurRoom = 12;
+        Managers.Game.checkedRoom[Managers.Game.CurRoom] = Define.CheckedRoom.Checked;
+
         CheckRoomState();
 
     }
     void OnClickDoor_10_1(PointerEventData data)
     {
         Managers.Game.CurRoom = 13;
+        Managers.Game.checkedRoom[Managers.Game.CurRoom] = Define.CheckedRoom.Checked;
+
         CheckRoomState();
 
     }
@@ -353,11 +401,16 @@ public class UI_Main : UI_Base
 
     }
 
-
-
-
     #endregion
 
+    public void Interaction()
+    {
+
+    }
+
+
+
+    #region UI Refresh / Enable MovePoint,Door
     public void CheckRoomState()
     {
         //OnClick_Door 해당 코드 -> 어차피 이미 클릭된 상태라면 아래 for문에서 확인될 것.
@@ -386,20 +439,16 @@ public class UI_Main : UI_Base
 
     }
 
-    public void CheckDoorState()
-    {
-
-    }
-
-    public void CheckMovePointState()
+    public void Check_MovePointstate()
     {
         int idx = Managers.Game.nowMP;
 
+        //raycastTarget off : 이미지는 있지만, 클릭은 안된다 (UI_EventHandler을 껐다는 의미와 같다.)
         void enabledAll()
         {
             for (int i = 0; i < 11; i++)
             {
-                movePoints[i].gameObject.GetComponent<Image>().raycastTarget = false;
+                _MovePoints[i].gameObject.GetComponent<Image>().raycastTarget = false;
             }
         }
 
@@ -408,72 +457,86 @@ public class UI_Main : UI_Base
 
             case 0:
                 enabledAll();
-                movePoints[1].gameObject.GetComponent<Image>().raycastTarget = true;
+                _MovePoints[1].gameObject.GetComponent<Image>().raycastTarget = true;
                 break;
 
             case 1:
                 enabledAll();
-                movePoints[0].gameObject.GetComponent<Image>().raycastTarget = true;
-                movePoints[2].gameObject.GetComponent<Image>().raycastTarget = true;
+                _MovePoints[0].gameObject.GetComponent<Image>().raycastTarget = true;
+                _MovePoints[2].gameObject.GetComponent<Image>().raycastTarget = true;
                 break;
 
             case 2:
                 enabledAll();
-                movePoints[1].gameObject.GetComponent<Image>().raycastTarget = true;
-                movePoints[3].gameObject.GetComponent<Image>().raycastTarget = true;
+                _MovePoints[1].gameObject.GetComponent<Image>().raycastTarget = true;
+                _MovePoints[3].gameObject.GetComponent<Image>().raycastTarget = true;
                 break;
 
             case 3:
                 enabledAll();
-                movePoints[2].gameObject.GetComponent<Image>().raycastTarget = true;
-                movePoints[4].gameObject.GetComponent<Image>().raycastTarget = true;
+                _MovePoints[2].gameObject.GetComponent<Image>().raycastTarget = true;
+                _MovePoints[4].gameObject.GetComponent<Image>().raycastTarget = true;
                 break;
 
             case 4:
                 enabledAll();
-                movePoints[3].gameObject.GetComponent<Image>().raycastTarget = true;
-                movePoints[5].gameObject.GetComponent<Image>().raycastTarget = true;
-                movePoints[9].gameObject.GetComponent<Image>().raycastTarget = true;
+                _MovePoints[3].gameObject.GetComponent<Image>().raycastTarget = true;
+                _MovePoints[5].gameObject.GetComponent<Image>().raycastTarget = true;
+                _MovePoints[9].gameObject.GetComponent<Image>().raycastTarget = true;
                 break;
 
             case 5:
                 enabledAll();
-                movePoints[4].gameObject.GetComponent<Image>().raycastTarget = true;
-                movePoints[6].gameObject.GetComponent<Image>().raycastTarget = true;
+                _MovePoints[4].gameObject.GetComponent<Image>().raycastTarget = true;
+                _MovePoints[6].gameObject.GetComponent<Image>().raycastTarget = true;
                 break;
 
             case 6:
                 enabledAll();
-                movePoints[5].gameObject.GetComponent<Image>().raycastTarget = true;
-                movePoints[7].gameObject.GetComponent<Image>().raycastTarget = true;
+                _MovePoints[5].gameObject.GetComponent<Image>().raycastTarget = true;
+                _MovePoints[7].gameObject.GetComponent<Image>().raycastTarget = true;
                 break;
 
             case 7:
                 enabledAll();
-                movePoints[6].gameObject.GetComponent<Image>().raycastTarget = true;
-                movePoints[8].gameObject.GetComponent<Image>().raycastTarget = true;
+                _MovePoints[6].gameObject.GetComponent<Image>().raycastTarget = true;
+                _MovePoints[8].gameObject.GetComponent<Image>().raycastTarget = true;
                 break;
 
             case 8:
                 enabledAll();
-                movePoints[7].gameObject.GetComponent<Image>().raycastTarget = true;
+                _MovePoints[7].gameObject.GetComponent<Image>().raycastTarget = true;
                 break;
 
             case 9:
                 enabledAll();
-                movePoints[4].gameObject.GetComponent<Image>().raycastTarget = true;
-                movePoints[10].gameObject.GetComponent<Image>().raycastTarget = true;
+                _MovePoints[4].gameObject.GetComponent<Image>().raycastTarget = true;
+                _MovePoints[10].gameObject.GetComponent<Image>().raycastTarget = true;
                 break;
 
             case 10:
                 enabledAll();
-                movePoints[9].gameObject.GetComponent<Image>().raycastTarget = true;
+                _MovePoints[9].gameObject.GetComponent<Image>().raycastTarget = true;
                 break;
         }
         
     }
 
+    public void CheckDoorState()
+    {
+        int idx = Managers.Game.nowMP;
+        void enabledAll()
+        {
+            for (int i = 0; i < 11; i++)
+            {
+                _MovePoints[i].gameObject.GetComponent<Image>().raycastTarget = false;
+            }
+        }
+    }
+    #endregion
 
+
+    #region CoSaveGame
     //DD처럼 진행상황 저장에 대한 주도권을 플레이어에게 제공하지 않음.
     IEnumerator CoSaveGame(float interval)
     {
@@ -483,6 +546,7 @@ public class UI_Main : UI_Base
             Managers.Game.SaveGame();
         }
     }
+    #endregion
 
 }
 

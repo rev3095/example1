@@ -62,7 +62,6 @@ public class UI_OptionPopup : UI_Popup
         OptionAction = action;
     }
 
-
     public void OnClickConfirmButton(PointerEventData data)
     {
         //Managers.Sound.Play(Sound.Effect, ("Sound_Checkbutton"));

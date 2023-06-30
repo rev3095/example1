@@ -27,7 +27,6 @@ public class Managers : MonoBehaviour
     public static ResourceManager Resource { get { Init(); return s_resourceManager; } }
 
     //public static SoundManager Sound {  get { Init(); return s_soundManager; } }
-
     
     public static string GetText(int id)
     {

@@ -98,6 +98,7 @@ public class UI_DifficultyPopup :UI_Popup
     void OnClickExitButton(PointerEventData data)
     {
         Managers.Game.SaveData.Difficulty = null;
+        UI_SelectPopup.saveFile[Managers.Game.nowSlot] = false; //Play Test : 다 해놓고 마지막에 exit 눌러버리면, 저장 데이터로 처리되서 false로 바꿔주기.
         Managers.UI.ClosePopupUI(this);
     }
 

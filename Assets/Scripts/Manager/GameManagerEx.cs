@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static Define;
 
 
@@ -52,40 +53,7 @@ public class GameData
 	public List<ComItemData> ComItemList = new List<ComItemData>();
 	public List<VisItemData> VisItemList = new List<VisItemData>();
 	public List<AccItemData> AccItemList = new List<AccItemData>();
-
-	// 15칸인데 => 30개로 늘리자 !
-	// define 15 -> 30
-	// 아이템 5개
-	// 15개 => Array List remove 15개 => 15칸인데
-	// for (int i < AccItemList .Length; i++)
-	// 
-
-	// const int SLOT_COUNT =15;
-	// for (int i < SLOT
-
-	//list[0] [1] [2] 
-
-	// 0을 지운다!
-
-	//list[1->0] [2->1]
-
-	// 정렬이된다
-
-
-	// Array 
-	// [0][1][2]
-
-	// 0을 지운다
-
-	// [0] = -1
-
-	// [0][1][2]
-
-
-
-	//List로 다시 바꾸기? => 사용함에 있어서 편리함. 
-	//2가지 
-
+	
 	public int UpgradePosession;
 
 	//난이도 선택
@@ -102,7 +70,7 @@ public class GameData
 	public int ACC;
 	public int PRO;
 	public int SPD;
-
+	
 	public int DMG;
 	public int MINDMG;
 	public int MAXDMG;
@@ -126,7 +94,7 @@ public class GameData
 	public double RESMOVE;
 	public double RESDEATH;
 
-	//처음 시작시 1회성 이벤트 동작을 확인할 bool값
+	//처음 시작시 1회성 이벤트 동작을 확인할 bool값	
 	public bool IsFirstStart;
 
 	//Slot에 표시될 저장 시점의 시간 y,m,d 순으로 표시됨.
@@ -139,12 +107,13 @@ public class GameManagerEx
 	public GameData _gameData = new GameData();
 	public GameData SaveData { get { return _gameData; } set { _gameData = value; } }
 
+	#region Properties (Stat, Data)
+
 	public CheckedRoom[] checkedRoom
-    {
-        get { return _gameData.checkedRoom; }
+	{
+		get { return _gameData.checkedRoom; }
 		set { _gameData.checkedRoom = value; }
-    }
-    #region 스탯
+	}
 
 
 	//클래스가 다르니까 프로퍼티 Name과 _gameData.Name이 같아도 상관 없다.
@@ -160,11 +129,24 @@ public class GameManagerEx
 		set { _gameData.playerstate = value; }
 	}
 
-	
+
 	public int CurFatigue
 	{
-		get { return _gameData.CurFatigue; }
-		set { _gameData.CurFatigue = value; }
+		get
+		{
+			if (_gameData.CurFatigue < 0)
+            {
+				_gameData.CurFatigue = 0;
+			}
+			return _gameData.CurFatigue; 
+		}
+		set
+		{
+			if (_gameData.CurFatigue < 0)
+				_gameData.CurFatigue = 0;
+
+			_gameData.CurFatigue = value;
+		}
 	}
 	//_gameData.CurFatigue = Mathf.Clamp(value, 0, MaxFatigue); 사용할지는 미지수.
 	public int MaxFatigue
@@ -176,9 +158,19 @@ public class GameManagerEx
 	//stress가 변화되었을 때 실행되는 public Action OnStressChanged; 사용할지는 미지수.
 	public int CurStress
 	{
-		get { return _gameData.CurStress; }
-		set { _gameData.CurStress = value; }
-	}
+		get
+		{
+			if (_gameData.CurStress < 0)
+			{
+				_gameData.CurStress = 0;
+			}
+			return _gameData.CurStress; }
+		set
+		{
+			if (_gameData.CurStress < 0)
+				_gameData.CurStress = 0; 
+			_gameData.CurStress = value; }
+		}
 
 	public int MaxStress
 	{
@@ -187,9 +179,19 @@ public class GameManagerEx
 	}
 	public int CurHunger
 	{
-		get { return _gameData.CurHunger; }
-		set { _gameData.CurHunger = value; }
-	}
+		get
+		{
+			if (_gameData.CurHunger < 0)
+			{
+				_gameData.CurHunger = 0;
+			}
+			return _gameData.CurHunger; }
+		set
+		{
+			if (_gameData.CurHunger < 0)
+				_gameData.CurHunger = 0; 
+			_gameData.CurHunger = value; }
+		}
 
 	public int MaxHunger
 	{
@@ -208,49 +210,49 @@ public class GameManagerEx
 	}
 
 	public int CurRoom
-    {
+	{
 		get { return _gameData.CurRoom; }
 		set { _gameData.CurRoom = value; }
-    }
+	}
 
 	public int nowMP
-    {
+	{
 		get { return _gameData.nowMP; }
-        set { _gameData.nowMP = value; }
-    }
+		set { _gameData.nowMP = value; }
+	}
 
 
 	public List<UseItemData> UseItemList
-    {
-        get { return _gameData.UseItemList; }
+	{
+		get { return _gameData.UseItemList; }
 		set { _gameData.UseItemList = value; }
-    }
+	}
 
 
 	public List<ComItemData> ComItemList
-    {
+	{
 		get { return _gameData.ComItemList; }
 		set { _gameData.ComItemList = value; }
-    }
+	}
 
 	public List<VisItemData> VisItemList
 	{
 		get { return _gameData.VisItemList; }
 		set { _gameData.VisItemList = value; }
-    }
-	
+	}
+
 	public List<AccItemData> AccItemList
-    {
+	{
 		get { return _gameData.AccItemList; }
 		set { _gameData.AccItemList = value; }
-    }
+	}
 
 	public int UpgradePossesion
-    {
+	{
 		get { return _gameData.UpgradePosession; }
-        set { _gameData.UpgradePosession = value; }
-    }
-    public bool IsNormal
+		set { _gameData.UpgradePosession = value; }
+	}
+	public bool IsNormal
 	{
 		get { return _gameData.IsNormal; }
 		set { _gameData.IsNormal = value; }
@@ -258,7 +260,7 @@ public class GameManagerEx
 	}
 
 	public string Difficulty
-    {
+	{
 		get { return _gameData.Difficulty; }
 		set { _gameData.Difficulty = value; }
 	}
@@ -270,7 +272,7 @@ public class GameManagerEx
 
 	}
 	public int MAXHP
-    {
+	{
 		get { return _gameData.MAXHP; }
 		set { _gameData.MAXHP = value; }
 
@@ -301,16 +303,6 @@ public class GameManagerEx
 		}
 	}
 
-/// <summary>
-/// 	public int ACC
-///	{
-///		get
-///		{
-///			int Acc = Managers.Data.Start.acc;
-///			return Acc;
-///		}
-///	}
-/// </summary>
 	public int ACC
 	{
 		get { return _gameData.ACC; }
@@ -333,7 +325,7 @@ public class GameManagerEx
 		set { _gameData.DMG = value; }
 	}
 	public int MINDMG
-    {
+	{
 		get { return _gameData.MINDMG; }
 		set { _gameData.MINDMG = value; }
 	}
@@ -387,51 +379,52 @@ public class GameManagerEx
 	}
 
 	public double RESBLEED
-    {
+	{
 		get { return _gameData.RESBLEED; }
 		set { _gameData.RESBLEED = value; }
 	}
 	public double RESBLOCKSIGHT
-    {
+	{
 		get { return _gameData.RESBLOCKSIGHT; }
 		set { _gameData.RESBLOCKSIGHT = value; }
 	}
 
 	public double RESMARK
-    {
+	{
 		get { return _gameData.RESMARK; }
 		set { _gameData.RESMARK = value; }
 	}
 
 	public double RESSTUN
-    {
+	{
 		get { return _gameData.RESSTUN; }
 		set { _gameData.RESSTUN = value; }
 	}
 
 	public double RESDOWN
-    {
+	{
 		get { return _gameData.RESDOWN; }
 		set { _gameData.RESDOWN = value; }
 	}
 
 	public double RESMOVE
-    {
+	{
 		get { return _gameData.RESMOVE; }
 		set { _gameData.RESMOVE = value; }
 	}
 	public double RESDEATH
-    {
+	{
 		get { return _gameData.RESDEATH; }
 		set { _gameData.RESDEATH = value; }
 	}
 
 
 	public bool IsFirstStart
-    {
+	{
 		get { return _gameData.IsFirstStart; }
 		set { _gameData.IsFirstStart = value; }
 	}
+
 	/*
 	public int GetStat(StatType type)
 	{
@@ -461,19 +454,19 @@ public class GameManagerEx
 	*/
 
 
-#endregion
+	#endregion
 
 
-    #region 시간
+	#region Time (Current Date)
 
-/*
-public float PlayTime
-{
-	get { return _gameData.PlayTime; }
-	set { _gameData.PlayTime = value; }
-}
-*/
-public class TimeUtils
+	/*
+	public float PlayTime
+	{
+		get { return _gameData.PlayTime; }
+		set { _gameData.PlayTime = value; }
+	}
+	*/
+	public class TimeUtils
 	{
 		public static string GetCurrentDate()
 		{
@@ -489,27 +482,119 @@ public class TimeUtils
 	#endregion
 
 
-	#region 배틀
+	#region Lobby
+
+	public UI_Top Top_Script;
+	public GameObject Top_Object;
+
+	public UI_Main Main_Script;
+	
+	//Random Event Percent에 맞는 데이터 Get Function
+		//MP Event
+	List<float> _MoveEventPercent = new List<float>();
+
+	public MoveEventData GetMoveEvent()
+	{
+		float _rand = UnityEngine.Random.Range(0f, 1f);
+		float _temp1 = 0f;
+		float _temp2 = 0f;
+		MoveEventData _MoveEventData = new MoveEventData();
+
+		int i = 0;
+
+		_MoveEventPercent.Add(0f);
+
+		for (int idx = 1; idx < MAX_MOVEEVENT_COUNT+1; idx++)
+		{
+			_MoveEventPercent.Add((float)Managers.Data.MoveEventDict[idx].acqPercent);
+		}
 
 
+        while (i < MAX_MOVEEVENT_COUNT)
+        {
+			_temp1 = _temp2;
+			_temp2 = _temp1 + _MoveEventPercent[i];
+
+
+			if (_temp1 <= _rand && _rand <= _temp2)
+			{
+				_MoveEventData = Managers.Data.MoveEventDict[i];
+				break;
+			}
+			else if (0.7f <= _rand && _rand <=1.0f)
+            {
+				_MoveEventData = new MoveEventData();
+				break;
+            }
+
+			i++;
+        }
+
+        _MoveEventPercent.Clear();
+
+		//70 % over : ID = 0인 MoveEventData가 전달되므로 식에 이용하기.
+		return _MoveEventData;
+
+    }
+
+		//Room Event
+	List<float> _InteractionPercent = new List<float>();
+
+	public bool GetBattleBoolean(int IDX)
+	{
+		float _rand = UnityEngine.Random.Range(0f, 1f);
+		float _temp = 0f;
+		bool _IsBattle = new bool();
+
+		int i = 0;
+
+		_InteractionPercent.Add(0f);
+
+		for (int idx = 1; idx < MAX_INTERACTION_COUNT+1; idx++)
+		{
+			_InteractionPercent.Add((float)Managers.Data.InteractionDict[idx].battlePercent);
+		}
+
+
+		while (i < MAX_MOVEEVENT_COUNT)
+		{
+			if (_temp + _InteractionPercent[i] <= _rand && _rand < _temp + _InteractionPercent[i + 1])
+			{
+				_IsBattle = true;
+			}
+			i++;
+        }
+
+        //Init
+        i = 0;
+        _InteractionPercent.Clear();
+
+		return _IsBattle;
+
+    }
+
+	public void RefreshLobbyUI()
+    {
+		Top_Script.Refresh();
+    }
 
 	#endregion
 
+	#region Battle
 
-	#region UI
-
-	IEnumerator FullTransition()
-	{
-		yield return null;
+	public void GoBattleScene()
+    {
+		SceneManager.LoadScene("BattleScene");
+		//Managers.UI.ShowSceneUI<UI_Battle>().SetInfo();
 	}
 
-	IEnumerator CenterTransition()
-	{
-		yield return null;
-
-	}
+	public void EndBattle()
+    {
+		SceneManager.LoadScene("LobbyScene");
+    }
 
 	#endregion
+
 
 	public string InputName;
 
@@ -542,8 +627,6 @@ public class TimeUtils
 		VisItemList = new List<VisItemData>();
 		AccItemList = new List<AccItemData>();
 
-		//_UseItemList.Clear();
-		//_ComItemList.Clear();
 		//HP = startdata.hp; , 근데 이제 이 데이터들은 Managers.Data.Character.hp에서 가져오는데 , Character ID에 따라서 달라짐 -> AntCompany 구조 참조
 
 		for (int i = 0; i < MAX_ROOM_COUNT_10F; i++)
@@ -551,16 +634,13 @@ public class TimeUtils
 			checkedRoom[i] = CheckedRoom.Default;
 		}
 
-
 		_path = Application.persistentDataPath + "/SaveData";
 		//PlayTime = 0.0;
 		
 	}
 
-	//Temp List -> 요소는  Array가 동적으로 삭제, 추가되지만 append가 불가능하여, 그냥 리스트로 한번 cast시킨뒤 다시 array를 반환하는 아이템 추가 함수 제작
-	private List<UseItemData> _UseItemList = new List<UseItemData>();
-	private List<ComItemData> _ComItemList = new List<ComItemData>();
 
+	#region Item (Add, Check IDX)
 
 	//필연적으로 하나밖에 제작이 안되는거 같음. 두 개 이상 생성될때는 두 번 호출시키기.
 	//
@@ -638,8 +718,12 @@ public class TimeUtils
 		return Idx;
 
 	}
-	#region Save & Load	
-	public string _path;
+
+    #endregion
+
+
+    #region Save & Load	
+    public string _path;
 	public int nowSlot;
 
 	//무조건 nowSlot이, SelectScene과 동일한 역할을 하는, LoadGamePopup에서 이루어져야 함.
@@ -659,12 +743,13 @@ public class TimeUtils
 	}
 
 	public void DeleteGame()
-    {
-		File.Delete(_path + nowSlot.ToString() + ".json");
-    }
-	public void LoadGame()
 	{
-		string fileStr = File.ReadAllText(_path + nowSlot.ToString()+".json");
+		File.Delete(_path + nowSlot.ToString() + ".json");
+	}
+
+	public void LoadGame(int slotIdx)
+	{
+		string fileStr = File.ReadAllText(_path + slotIdx.ToString()+".json");
 		Managers.Game.SaveData = JsonUtility.FromJson<GameData>(fileStr);
 		/*
 		GameData data = JsonUtility.FromJson<GameData>(fileStr);
@@ -676,6 +761,12 @@ public class TimeUtils
 		Debug.Log($"Save Game Loaded : {_path+nowSlot.ToString()}");
 		*/
 	}
+	public void LoadGame()
+	{
+		string fileStr = File.ReadAllText(_path + nowSlot.ToString() + ".json");
+		Managers.Game.SaveData = JsonUtility.FromJson<GameData>(fileStr);
+
+	}
 
 	public void DataClear()
     {
@@ -683,5 +774,6 @@ public class TimeUtils
 		Managers.Game.SaveData = new GameData(); //현재 게임 데이터
 
     }
+
 	#endregion
 }

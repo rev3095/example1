@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1b3b4b945939a54ea0b23d3396115fb, type: 3}
   m_Name: chloe_SkeletonData
   m_EditorClassIdentifier: 
-  atlasAssets: []
-  scale: 0.01
+  atlasAssets:
+  - {fileID: 0}
+  scale: 1
   skeletonJSON: {fileID: 4900000, guid: 3a2fb9c58c723a4458513b671a8ec4ba, type: 3}
   isUpgradingBlendModeMaterials: 0
   blendModeMaterials:
